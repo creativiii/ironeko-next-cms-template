@@ -1,0 +1,5062 @@
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+.frame-content {
+  color: #4a5568;
+  max-width: 65ch;
+  margin: auto;
+}
+
+.frame-content [class~="lead"] {
+  color: #4a5568;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.frame-content a {
+  color: #1a202c;
+  text-decoration: underline;
+}
+.frame-content strong {
+  color: #1a202c;
+  font-weight: 600;
+}
+.frame-content ol {
+  counter-reset: list-counter;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.frame-content ol > li {
+  position: relative;
+  counter-increment: list-counter;
+  padding-left: 1.75rem;
+}
+.frame-content ol > li::before {
+  content: counter(list-counter) ".";
+  position: absolute;
+  font-weight: 400;
+  color: #718096;
+}
+.frame-content ul > li {
+  position: relative;
+  padding-left: 1.75rem;
+}
+.frame-content ul > li::before {
+  content: "";
+  position: absolute;
+  background-color: #cbd5e0;
+  border-radius: 50%;
+  width: 0.375rem;
+  height: 0.375rem;
+  top: calc(0.875em - 0.1875em);
+  left: 0.25rem;
+}
+.frame-content hr {
+  border-color: #e2e8f0;
+  border-top-width: 1px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.frame-content blockquote {
+  font-weight: 500;
+  font-style: italic;
+  color: #1a202c;
+  border-left-width: 0.25rrem;
+  border-left-color: #e2e8f0;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  padding-left: 1rem;
+}
+.frame-content blockquote p:first-of-type::before {
+  content: open-quote;
+}
+.frame-content blockquote p:last-of-type::after {
+  content: close-quote;
+}
+.frame-content h1 {
+  color: #1a202c;
+  font-weight: 800;
+  font-size: 2.25rem;
+  margin-top: 0;
+  margin-bottom: 0.8888889rem;
+  line-height: 1.1111111;
+}
+.frame-content h2 {
+  color: #1a202c;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3333333;
+}
+.frame-content h3 {
+  color: #1a202c;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+.frame-content h4 {
+  color: #1a202c;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.frame-content figure figcaption {
+  color: #718096;
+  font-size: 0.875rem;
+  line-height: 1.4285714;
+  margin-top: 0.8571429rem;
+}
+.frame-content code {
+  color: #1a202c;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.frame-content code::before {
+  content: "`";
+}
+.frame-content code::after {
+  content: "`";
+}
+.frame-content pre {
+  color: #e2e8f0;
+  background-color: #2d3748;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.7142857;
+  margin-top: 1.7142857rem;
+  margin-bottom: 1.7142857rem;
+  border-radius: 0.375rrem;
+  padding-top: 0.8571429rem;
+  padding-right: 1.1428571rem;
+  padding-bottom: 0.8571429rem;
+  padding-left: 1.1428571rem;
+}
+.frame-content pre code {
+  background-color: transparent;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-weight: 400;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+}
+.frame-content pre code::before {
+  content: "";
+}
+.frame-content pre code::after {
+  content: "";
+}
+.frame-content table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.7142857;
+}
+.frame-content thead {
+  color: #1a202c;
+  font-weight: 600;
+  border-bottom-width: 1px;
+  border-bottom-color: #cbd5e0;
+}
+.frame-content thead th {
+  vertical-align: bottom;
+  padding-right: 0.5714286rem;
+  padding-bottom: 0.5714286rem;
+  padding-left: 0.5714286rem;
+}
+.frame-content tbody tr {
+  border-bottom-width: 1px;
+  border-bottom-color: #e2e8f0;
+}
+.frame-content tbody tr:last-child {
+  border-bottom-width: 0;
+}
+.frame-content tbody td {
+  vertical-align: top;
+  padding-top: 0.5714286rem;
+  padding-right: 0.5714286rem;
+  padding-bottom: 0.5714286rem;
+  padding-left: 0.5714286rem;
+}
+.frame-content {
+  font-size: 1rrem;
+  line-height: 1.75;
+}
+.frame-content p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.frame-content img {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content video {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.frame-content h2 code {
+  font-size: 0.875rem;
+}
+.frame-content h3 code {
+  font-size: 0.9rem;
+}
+.frame-content ul {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.frame-content li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.frame-content ol > li:before {
+  left: 0;
+}
+.frame-content > ul > li p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.frame-content > ul > li > :first-child {
+  margin-top: 1.25rem;
+}
+.frame-content > ul > li > :last-child {
+  margin-bottom: 1.25rem;
+}
+.frame-content > ol > li > :first-child {
+  margin-top: 1.25rem;
+}
+.frame-content > ol > li > :last-child {
+  margin-bottom: 1.25rem;
+}
+.frame-content ol ol,
+.frame-content ol ul,
+.frame-content ul ol,
+.frame-content ul ul {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.frame-content hr + * {
+  margin-top: 0;
+}
+.frame-content h2 + * {
+  margin-top: 0;
+}
+.frame-content h3 + * {
+  margin-top: 0;
+}
+.frame-content h4 + * {
+  margin-top: 0;
+}
+.frame-content thead th:first-child {
+  padding-left: 0;
+}
+.frame-content thead th:last-child {
+  padding-right: 0;
+}
+.frame-content tbody td:first-child {
+  padding-left: 0;
+}
+.frame-content tbody td:last-child {
+  padding-right: 0;
+}
+.frame-content > :first-child {
+  margin-top: 0;
+}
+.frame-content > :last-child {
+  margin-bottom: 0;
+}
+.frame-content-sm {
+  font-size: 0.875rrem;
+  line-height: 1.7142857;
+}
+.frame-content-sm p {
+  margin-top: 1.1428571rem;
+  margin-bottom: 1.1428571rem;
+}
+.frame-content-sm [class~="lead"] {
+  font-size: 1.2857143rem;
+  line-height: 1.5555556;
+  margin-top: 0.8888889rem;
+  margin-bottom: 0.8888889rem;
+}
+.frame-content-sm blockquote {
+  margin-top: 1.3333333rem;
+  margin-bottom: 1.3333333rem;
+  padding-left: 1.1111111rem;
+}
+.frame-content-sm h1 {
+  font-size: 2.1428571rem;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+.frame-content-sm h2 {
+  font-size: 1.4285714rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+.frame-content-sm h3 {
+  font-size: 1.2857143rem;
+  margin-top: 1.5555556rem;
+  margin-bottom: 0.4444444rem;
+  line-height: 1.5555556;
+}
+.frame-content-sm h4 {
+  margin-top: 1.4285714rem;
+  margin-bottom: 0.5714286rem;
+  line-height: 1.4285714;
+}
+.frame-content-sm img {
+  margin-top: 1.7142857rem;
+  margin-bottom: 1.7142857rem;
+}
+.frame-content-sm video {
+  margin-top: 1.7142857rem;
+  margin-bottom: 1.7142857rem;
+}
+.frame-content-sm figure {
+  margin-top: 1.7142857rem;
+  margin-bottom: 1.7142857rem;
+}
+.frame-content-sm figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.frame-content-sm figure figcaption {
+  font-size: 0.8571429rem;
+  line-height: 1.3333333;
+  margin-top: 0.6666667rem;
+}
+.frame-content-sm code {
+  font-size: 0.8571429rem;
+}
+.frame-content-sm h2 code {
+  font-size: 0.9rem;
+}
+.frame-content-sm h3 code {
+  font-size: 0.8888889rem;
+}
+.frame-content-sm pre {
+  font-size: 0.8571429rem;
+  line-height: 1.6666667;
+  margin-top: 1.6666667rem;
+  margin-bottom: 1.6666667rem;
+  border-radius: 0.25rrem;
+  padding-top: 0.6666667rem;
+  padding-right: 1rem;
+  padding-bottom: 0.6666667rem;
+  padding-left: 1rem;
+}
+.frame-content-sm ol {
+  margin-top: 1.1428571rem;
+  margin-bottom: 1.1428571rem;
+}
+.frame-content-sm ul {
+  margin-top: 1.1428571rem;
+  margin-bottom: 1.1428571rem;
+}
+.frame-content-sm li {
+  margin-top: 0.2857143rem;
+  margin-bottom: 0.2857143rem;
+}
+.frame-content-sm ol > li {
+  padding-left: 1.5714286rem;
+}
+.frame-content-sm ol > li:before {
+  left: 0;
+}
+.frame-content-sm ul > li {
+  padding-left: 1.5714286rem;
+}
+.frame-content-sm ul > li::before {
+  height: 0.3571429rem;
+  width: 0.3571429rem;
+  top: calc(0.8571429em - 0.1785714em);
+  left: 0.2142857rem;
+}
+.frame-content-sm > ul > li p {
+  margin-top: 0.5714286rem;
+  margin-bottom: 0.5714286rem;
+}
+.frame-content-sm > ul > li > :first-child {
+  margin-top: 1.1428571rem;
+}
+.frame-content-sm > ul > li > :last-child {
+  margin-bottom: 1.1428571rem;
+}
+.frame-content-sm > ol > li > :first-child {
+  margin-top: 1.1428571rem;
+}
+.frame-content-sm > ol > li > :last-child {
+  margin-bottom: 1.1428571rem;
+}
+.frame-content-sm ol ol,
+.frame-content-sm ol ul,
+.frame-content-sm ul ol,
+.frame-content-sm ul ul {
+  margin-top: 0.5714286rem;
+  margin-bottom: 0.5714286rem;
+}
+.frame-content-sm hr {
+  margin-top: 2.8571429rem;
+  margin-bottom: 2.8571429rem;
+}
+.frame-content-sm hr + * {
+  margin-top: 0;
+}
+.frame-content-sm h2 + * {
+  margin-top: 0;
+}
+.frame-content-sm h3 + * {
+  margin-top: 0;
+}
+.frame-content-sm h4 + * {
+  margin-top: 0;
+}
+.frame-content-sm table {
+  font-size: 0.8571429rem;
+  line-height: 1.5;
+}
+.frame-content-sm thead th {
+  padding-right: 1rem;
+  padding-bottom: 0.6666667rem;
+  padding-left: 1rem;
+}
+.frame-content-sm thead th:first-child {
+  padding-left: 0;
+}
+.frame-content-sm thead th:last-child {
+  padding-right: 0;
+}
+.frame-content-sm tbody td {
+  padding-top: 0.6666667rem;
+  padding-right: 1rem;
+  padding-bottom: 0.6666667rem;
+  padding-left: 1rem;
+}
+.frame-content-sm tbody td:first-child {
+  padding-left: 0;
+}
+.frame-content-sm tbody td:last-child {
+  padding-right: 0;
+}
+.frame-content-sm > :first-child {
+  margin-top: 0;
+}
+.frame-content-sm > :last-child {
+  margin-bottom: 0;
+}
+.frame-content-lg {
+  font-size: 1.125rrem;
+  line-height: 1.7777778;
+}
+.frame-content-lg p {
+  margin-top: 1.3333333rem;
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-lg [class~="lead"] {
+  font-size: 1.2222222rem;
+  line-height: 1.4545455;
+  margin-top: 1.0909091rem;
+  margin-bottom: 1.0909091rem;
+}
+.frame-content-lg blockquote {
+  margin-top: 1.6666667rem;
+  margin-bottom: 1.6666667rem;
+  padding-left: 1rem;
+}
+.frame-content-lg h1 {
+  font-size: 2.6666667rem;
+  margin-top: 0;
+  margin-bottom: 0.8333333rem;
+  line-height: 1;
+}
+.frame-content-lg h2 {
+  font-size: 1.6666667rem;
+  margin-top: 1.8666667rem;
+  margin-bottom: 1.0666667rem;
+  line-height: 1.3333333;
+}
+.frame-content-lg h3 {
+  font-size: 1.3333333rem;
+  margin-top: 1.6666667rem;
+  margin-bottom: 0.6666667rem;
+  line-height: 1.5;
+}
+.frame-content-lg h4 {
+  margin-top: 1.7777778rem;
+  margin-bottom: 0.4444444rem;
+  line-height: 1.5555556;
+}
+.frame-content-lg img {
+  margin-top: 1.7777778rem;
+  margin-bottom: 1.7777778rem;
+}
+.frame-content-lg video {
+  margin-top: 1.7777778rem;
+  margin-bottom: 1.7777778rem;
+}
+.frame-content-lg figure {
+  margin-top: 1.7777778rem;
+  margin-bottom: 1.7777778rem;
+}
+.frame-content-lg figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.frame-content-lg figure figcaption {
+  font-size: 0.8888889rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+.frame-content-lg code {
+  font-size: 0.8888889rem;
+}
+.frame-content-lg h2 code {
+  font-size: 0.8666667rem;
+}
+.frame-content-lg h3 code {
+  font-size: 0.875rem;
+}
+.frame-content-lg pre {
+  font-size: 0.8888889rem;
+  line-height: 1.75;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.375rrem;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+.frame-content-lg ol {
+  margin-top: 1.3333333rem;
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-lg ul {
+  margin-top: 1.3333333rem;
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-lg li {
+  margin-top: 0.6666667rem;
+  margin-bottom: 0.6666667rem;
+}
+.frame-content-lg ol > li {
+  padding-left: 1.6666667rem;
+}
+.frame-content-lg ol > li:before {
+  left: 0;
+}
+.frame-content-lg ul > li {
+  padding-left: 1.6666667rem;
+}
+.frame-content-lg ul > li::before {
+  width: 0.3333333rem;
+  height: 0.3333333rem;
+  top: calc(0.8888889em - 0.1666667em);
+  left: 0.2222222rem;
+}
+.frame-content-lg > ul > li p {
+  margin-top: 0.8888889rem;
+  margin-bottom: 0.8888889rem;
+}
+.frame-content-lg > ul > li > :first-child {
+  margin-top: 1.3333333rem;
+}
+.frame-content-lg > ul > li > :last-child {
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-lg > ol > li > :first-child {
+  margin-top: 1.3333333rem;
+}
+.frame-content-lg > ol > li > :last-child {
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-lg ol ol,
+.frame-content-lg ol ul,
+.frame-content-lg ul ol,
+.frame-content-lg ul ul {
+  margin-top: 0.8888889rem;
+  margin-bottom: 0.8888889rem;
+}
+.frame-content-lg hr {
+  margin-top: 3.1111111rem;
+  margin-bottom: 3.1111111rem;
+}
+.frame-content-lg hr + * {
+  margin-top: 0;
+}
+.frame-content-lg h2 + * {
+  margin-top: 0;
+}
+.frame-content-lg h3 + * {
+  margin-top: 0;
+}
+.frame-content-lg h4 + * {
+  margin-top: 0;
+}
+.frame-content-lg table {
+  font-size: 0.8888889rem;
+  line-height: 1.5;
+}
+.frame-content-lg thead th {
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+}
+.frame-content-lg thead th:first-child {
+  padding-left: 0;
+}
+.frame-content-lg thead th:last-child {
+  padding-right: 0;
+}
+.frame-content-lg tbody td {
+  padding-top: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+}
+.frame-content-lg tbody td:first-child {
+  padding-left: 0;
+}
+.frame-content-lg tbody td:last-child {
+  padding-right: 0;
+}
+.frame-content-lg > :first-child {
+  margin-top: 0;
+}
+.frame-content-lg > :last-child {
+  margin-bottom: 0;
+}
+.frame-content-xl {
+  font-size: 1.25rrem;
+  line-height: 1.8;
+}
+.frame-content-xl p {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.frame-content-xl [class~="lead"] {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.frame-content-xl blockquote {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  padding-left: 1.0666667rem;
+}
+.frame-content-xl h1 {
+  font-size: 2.8rem;
+  margin-top: 0;
+  margin-bottom: 0.8571429rem;
+  line-height: 1;
+}
+.frame-content-xl h2 {
+  font-size: 1.8rem;
+  margin-top: 1.5555556rem;
+  margin-bottom: 0.8888889rem;
+  line-height: 1.1111111;
+}
+.frame-content-xl h3 {
+  font-size: 1.5rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6666667rem;
+  line-height: 1.3333333;
+}
+.frame-content-xl h4 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+.frame-content-xl img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content-xl video {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content-xl figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content-xl figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.frame-content-xl figure figcaption {
+  font-size: 0.9rem;
+  line-height: 1.5555556;
+  margin-top: 1rem;
+}
+.frame-content-xl code {
+  font-size: 0.9rem;
+}
+.frame-content-xl h2 code {
+  font-size: 0.8611111rem;
+}
+.frame-content-xl h3 code {
+  font-size: 0.9rem;
+}
+.frame-content-xl pre {
+  font-size: 0.9rem;
+  line-height: 1.7777778;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rrem;
+  padding-top: 1.1111111rem;
+  padding-right: 1.3333333rem;
+  padding-bottom: 1.1111111rem;
+  padding-left: 1.3333333rem;
+}
+.frame-content-xl ol {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.frame-content-xl ul {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.frame-content-xl li {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.frame-content-xl ol > li {
+  padding-left: 1.8rem;
+}
+.frame-content-xl ol > li:before {
+  left: 0;
+}
+.frame-content-xl ul > li {
+  padding-left: 1.8rem;
+}
+.frame-content-xl ul > li::before {
+  width: 0.35rem;
+  height: 0.35rem;
+  top: calc(0.9em - 0.175em);
+  left: 0.25rem;
+}
+.frame-content-xl > ul > li p {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.frame-content-xl > ul > li > :first-child {
+  margin-top: 1.2rem;
+}
+.frame-content-xl > ul > li > :last-child {
+  margin-bottom: 1.2rem;
+}
+.frame-content-xl > ol > li > :first-child {
+  margin-top: 1.2rem;
+}
+.frame-content-xl > ol > li > :last-child {
+  margin-bottom: 1.2rem;
+}
+.frame-content-xl ol ol,
+.frame-content-xl ol ul,
+.frame-content-xl ul ol,
+.frame-content-xl ul ul {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.frame-content-xl hr {
+  margin-top: 2.8rem;
+  margin-bottom: 2.8rem;
+}
+.frame-content-xl hr + * {
+  margin-top: 0;
+}
+.frame-content-xl h2 + * {
+  margin-top: 0;
+}
+.frame-content-xl h3 + * {
+  margin-top: 0;
+}
+.frame-content-xl h4 + * {
+  margin-top: 0;
+}
+.frame-content-xl table {
+  font-size: 0.9rem;
+  line-height: 1.5555556;
+}
+.frame-content-xl thead th {
+  padding-right: 0.6666667rem;
+  padding-bottom: 0.8888889rem;
+  padding-left: 0.6666667rem;
+}
+.frame-content-xl thead th:first-child {
+  padding-left: 0;
+}
+.frame-content-xl thead th:last-child {
+  padding-right: 0;
+}
+.frame-content-xl tbody td {
+  padding-top: 0.8888889rem;
+  padding-right: 0.6666667rem;
+  padding-bottom: 0.8888889rem;
+  padding-left: 0.6666667rem;
+}
+.frame-content-xl tbody td:first-child {
+  padding-left: 0;
+}
+.frame-content-xl tbody td:last-child {
+  padding-right: 0;
+}
+.frame-content-xl > :first-child {
+  margin-top: 0;
+}
+.frame-content-xl > :last-child {
+  margin-bottom: 0;
+}
+.frame-content-2xl {
+  font-size: 1.5rrem;
+  line-height: 1.6666667;
+}
+.frame-content-2xl p {
+  margin-top: 1.3333333rem;
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-2xl [class~="lead"] {
+  font-size: 1.25rem;
+  line-height: 1.4666667;
+  margin-top: 1.0666667rem;
+  margin-bottom: 1.0666667rem;
+}
+.frame-content-2xl blockquote {
+  margin-top: 1.7777778rem;
+  margin-bottom: 1.7777778rem;
+  padding-left: 1.1111111rem;
+}
+.frame-content-2xl h1 {
+  font-size: 2.6666667rem;
+  margin-top: 0;
+  margin-bottom: 0.875rem;
+  line-height: 1;
+}
+.frame-content-2xl h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8333333rem;
+  line-height: 1.0833333;
+}
+.frame-content-2xl h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5555556rem;
+  margin-bottom: 0.6666667rem;
+  line-height: 1.2222222;
+}
+.frame-content-2xl h4 {
+  margin-top: 1.6666667rem;
+  margin-bottom: 0.6666667rem;
+  line-height: 1.5;
+}
+.frame-content-2xl img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content-2xl video {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content-2xl figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.frame-content-2xl figure > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.frame-content-2xl figure figcaption {
+  font-size: 0.8333333rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+.frame-content-2xl code {
+  font-size: 0.8333333rem;
+}
+.frame-content-2xl h2 code {
+  font-size: 0.875rem;
+}
+.frame-content-2xl h3 code {
+  font-size: 0.8888889rem;
+}
+.frame-content-2xl pre {
+  font-size: 0.8333333rem;
+  line-height: 1.8;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rrem;
+  padding-top: 1.2rem;
+  padding-right: 1.6rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.6rem;
+}
+.frame-content-2xl ol {
+  margin-top: 1.3333333rem;
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-2xl ul {
+  margin-top: 1.3333333rem;
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-2xl li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.frame-content-2xl ol > li {
+  padding-left: 1.6666667rem;
+}
+.frame-content-2xl ol > li:before {
+  left: 0;
+}
+.frame-content-2xl ul > li {
+  padding-left: 1.6666667rem;
+}
+.frame-content-2xl ul > li::before {
+  width: 0.3333333rem;
+  height: 0.3333333rem;
+  top: calc(0.8333333em - 0.1666667em);
+  left: 0.25rem;
+}
+.frame-content-2xl > ul > li p {
+  margin-top: 0.8333333rem;
+  margin-bottom: 0.8333333rem;
+}
+.frame-content-2xl > ul > li > :first-child {
+  margin-top: 1.3333333rem;
+}
+.frame-content-2xl > ul > li > :last-child {
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-2xl > ol > li > :first-child {
+  margin-top: 1.3333333rem;
+}
+.frame-content-2xl > ol > li > :last-child {
+  margin-bottom: 1.3333333rem;
+}
+.frame-content-2xl ol ol,
+.frame-content-2xl ol ul,
+.frame-content-2xl ul ol,
+.frame-content-2xl ul ul {
+  margin-top: 0.6666667rem;
+  margin-bottom: 0.6666667rem;
+}
+.frame-content-2xl hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.frame-content-2xl hr + * {
+  margin-top: 0;
+}
+.frame-content-2xl h2 + * {
+  margin-top: 0;
+}
+.frame-content-2xl h3 + * {
+  margin-top: 0;
+}
+.frame-content-2xl h4 + * {
+  margin-top: 0;
+}
+.frame-content-2xl table {
+  font-size: 0.8333333rem;
+  line-height: 1.4;
+}
+.frame-content-2xl thead th {
+  padding-right: 0.6rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.6rem;
+}
+.frame-content-2xl thead th:first-child {
+  padding-left: 0;
+}
+.frame-content-2xl thead th:last-child {
+  padding-right: 0;
+}
+.frame-content-2xl tbody td {
+  padding-top: 0.8rem;
+  padding-right: 0.6rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.6rem;
+}
+.frame-content-2xl tbody td:first-child {
+  padding-left: 0;
+}
+.frame-content-2xl tbody td:last-child {
+  padding-right: 0;
+}
+.frame-content-2xl > :first-child {
+  margin-top: 0;
+}
+.frame-content-2xl > :last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 640px) {
+  .sm\:frame-content {
+    color: #4a5568;
+    max-width: 65ch;
+  }
+  .sm\:frame-content [class~="lead"] {
+    color: #4a5568;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .sm\:frame-content a {
+    color: #1a202c;
+    text-decoration: underline;
+  }
+  .sm\:frame-content strong {
+    color: #1a202c;
+    font-weight: 600;
+  }
+  .sm\:frame-content ol {
+    counter-reset: list-counter;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .sm\:frame-content ol > li {
+    position: relative;
+    counter-increment: list-counter;
+    padding-left: 1.75rem;
+  }
+  .sm\:frame-content ol > li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    font-weight: 400;
+    color: #718096;
+  }
+  .sm\:frame-content ul > li {
+    position: relative;
+    padding-left: 1.75rem;
+  }
+  .sm\:frame-content ul > li::before {
+    content: "";
+    position: absolute;
+    background-color: #cbd5e0;
+    border-radius: 50%;
+    width: 0.375rem;
+    height: 0.375rem;
+    top: calc(0.875em - 0.1875em);
+    left: 0.25rem;
+  }
+  .sm\:frame-content hr {
+    border-color: #e2e8f0;
+    border-top-width: 1px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .sm\:frame-content blockquote {
+    font-weight: 500;
+    font-style: italic;
+    color: #1a202c;
+    border-left-width: 0.25rrem;
+    border-left-color: #e2e8f0;
+    quotes: "\201C""\201D""\2018""\2019";
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1rem;
+  }
+  .sm\:frame-content blockquote p:first-of-type::before {
+    content: open-quote;
+  }
+  .sm\:frame-content blockquote p:last-of-type::after {
+    content: close-quote;
+  }
+  .sm\:frame-content h1 {
+    color: #1a202c;
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: 0.8888889rem;
+    line-height: 1.1111111;
+  }
+  .sm\:frame-content h2 {
+    color: #1a202c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3333333;
+  }
+  .sm\:frame-content h3 {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  .sm\:frame-content h4 {
+    color: #1a202c;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  .sm\:frame-content figure figcaption {
+    color: #718096;
+    font-size: 0.875rem;
+    line-height: 1.4285714;
+    margin-top: 0.8571429rem;
+  }
+  .sm\:frame-content code {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  .sm\:frame-content code::before {
+    content: "`";
+  }
+  .sm\:frame-content code::after {
+    content: "`";
+  }
+  .sm\:frame-content pre {
+    color: #e2e8f0;
+    background-color: #2d3748;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+    border-radius: 0.375rrem;
+    padding-top: 0.8571429rem;
+    padding-right: 1.1428571rem;
+    padding-bottom: 0.8571429rem;
+    padding-left: 1.1428571rem;
+  }
+  .sm\:frame-content pre code {
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 0;
+    padding: 0;
+    font-weight: 400;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+  }
+  .sm\:frame-content pre code::before {
+    content: "";
+  }
+  .sm\:frame-content pre code::after {
+    content: "";
+  }
+  .sm\:frame-content table {
+    width: 100%;
+    table-layout: auto;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+  }
+  .sm\:frame-content thead {
+    color: #1a202c;
+    font-weight: 600;
+    border-bottom-width: 1px;
+    border-bottom-color: #cbd5e0;
+  }
+  .sm\:frame-content thead th {
+    vertical-align: bottom;
+    padding-right: 0.5714286rem;
+    padding-bottom: 0.5714286rem;
+    padding-left: 0.5714286rem;
+  }
+  .sm\:frame-content tbody tr {
+    border-bottom-width: 1px;
+    border-bottom-color: #e2e8f0;
+  }
+  .sm\:frame-content tbody tr:last-child {
+    border-bottom-width: 0;
+  }
+  .sm\:frame-content tbody td {
+    vertical-align: top;
+    padding-top: 0.5714286rem;
+    padding-right: 0.5714286rem;
+    padding-bottom: 0.5714286rem;
+    padding-left: 0.5714286rem;
+  }
+  .sm\:frame-content {
+    font-size: 1rrem;
+    line-height: 1.75;
+  }
+  .sm\:frame-content p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .sm\:frame-content img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sm\:frame-content h2 code {
+    font-size: 0.875rem;
+  }
+  .sm\:frame-content h3 code {
+    font-size: 0.9rem;
+  }
+  .sm\:frame-content ul {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .sm\:frame-content li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .sm\:frame-content ol > li:before {
+    left: 0;
+  }
+  .sm\:frame-content > ul > li p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .sm\:frame-content > ul > li > :first-child {
+    margin-top: 1.25rem;
+  }
+  .sm\:frame-content > ul > li > :last-child {
+    margin-bottom: 1.25rem;
+  }
+  .sm\:frame-content > ol > li > :first-child {
+    margin-top: 1.25rem;
+  }
+  .sm\:frame-content > ol > li > :last-child {
+    margin-bottom: 1.25rem;
+  }
+  .sm\:frame-content ol ol,
+  .sm\:frame-content ol ul,
+  .sm\:frame-content ul ol,
+  .sm\:frame-content ul ul {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .sm\:frame-content hr + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content h2 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content h3 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content h4 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content thead th:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content thead th:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content tbody td:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content tbody td:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content > :first-child {
+    margin-top: 0;
+  }
+  .sm\:frame-content > :last-child {
+    margin-bottom: 0;
+  }
+  .sm\:frame-content-sm {
+    font-size: 0.875rrem;
+    line-height: 1.7142857;
+  }
+  .sm\:frame-content-sm p {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .sm\:frame-content-sm [class~="lead"] {
+    font-size: 1.2857143rem;
+    line-height: 1.5555556;
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .sm\:frame-content-sm blockquote {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+    padding-left: 1.1111111rem;
+  }
+  .sm\:frame-content-sm h1 {
+    font-size: 2.1428571rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+  }
+  .sm\:frame-content-sm h2 {
+    font-size: 1.4285714rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+  .sm\:frame-content-sm h3 {
+    font-size: 1.2857143rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.4444444rem;
+    line-height: 1.5555556;
+  }
+  .sm\:frame-content-sm h4 {
+    margin-top: 1.4285714rem;
+    margin-bottom: 0.5714286rem;
+    line-height: 1.4285714;
+  }
+  .sm\:frame-content-sm img {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .sm\:frame-content-sm video {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .sm\:frame-content-sm figure {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .sm\:frame-content-sm figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sm\:frame-content-sm figure figcaption {
+    font-size: 0.8571429rem;
+    line-height: 1.3333333;
+    margin-top: 0.6666667rem;
+  }
+  .sm\:frame-content-sm code {
+    font-size: 0.8571429rem;
+  }
+  .sm\:frame-content-sm h2 code {
+    font-size: 0.9rem;
+  }
+  .sm\:frame-content-sm h3 code {
+    font-size: 0.8888889rem;
+  }
+  .sm\:frame-content-sm pre {
+    font-size: 0.8571429rem;
+    line-height: 1.6666667;
+    margin-top: 1.6666667rem;
+    margin-bottom: 1.6666667rem;
+    border-radius: 0.25rrem;
+    padding-top: 0.6666667rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .sm\:frame-content-sm ol {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .sm\:frame-content-sm ul {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .sm\:frame-content-sm li {
+    margin-top: 0.2857143rem;
+    margin-bottom: 0.2857143rem;
+  }
+  .sm\:frame-content-sm ol > li {
+    padding-left: 1.5714286rem;
+  }
+  .sm\:frame-content-sm ol > li:before {
+    left: 0;
+  }
+  .sm\:frame-content-sm ul > li {
+    padding-left: 1.5714286rem;
+  }
+  .sm\:frame-content-sm ul > li::before {
+    height: 0.3571429rem;
+    width: 0.3571429rem;
+    top: calc(0.8571429em - 0.1785714em);
+    left: 0.2142857rem;
+  }
+  .sm\:frame-content-sm > ul > li p {
+    margin-top: 0.5714286rem;
+    margin-bottom: 0.5714286rem;
+  }
+  .sm\:frame-content-sm > ul > li > :first-child {
+    margin-top: 1.1428571rem;
+  }
+  .sm\:frame-content-sm > ul > li > :last-child {
+    margin-bottom: 1.1428571rem;
+  }
+  .sm\:frame-content-sm > ol > li > :first-child {
+    margin-top: 1.1428571rem;
+  }
+  .sm\:frame-content-sm > ol > li > :last-child {
+    margin-bottom: 1.1428571rem;
+  }
+  .sm\:frame-content-sm ol ol,
+  .sm\:frame-content-sm ol ul,
+  .sm\:frame-content-sm ul ol,
+  .sm\:frame-content-sm ul ul {
+    margin-top: 0.5714286rem;
+    margin-bottom: 0.5714286rem;
+  }
+  .sm\:frame-content-sm hr {
+    margin-top: 2.8571429rem;
+    margin-bottom: 2.8571429rem;
+  }
+  .sm\:frame-content-sm hr + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-sm h2 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-sm h3 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-sm h4 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-sm table {
+    font-size: 0.8571429rem;
+    line-height: 1.5;
+  }
+  .sm\:frame-content-sm thead th {
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .sm\:frame-content-sm thead th:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content-sm thead th:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content-sm tbody td {
+    padding-top: 0.6666667rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .sm\:frame-content-sm tbody td:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content-sm tbody td:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content-sm > :first-child {
+    margin-top: 0;
+  }
+  .sm\:frame-content-sm > :last-child {
+    margin-bottom: 0;
+  }
+  .sm\:frame-content-lg {
+    font-size: 1.125rrem;
+    line-height: 1.7777778;
+  }
+  .sm\:frame-content-lg p {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-lg [class~="lead"] {
+    font-size: 1.2222222rem;
+    line-height: 1.4545455;
+    margin-top: 1.0909091rem;
+    margin-bottom: 1.0909091rem;
+  }
+  .sm\:frame-content-lg blockquote {
+    margin-top: 1.6666667rem;
+    margin-bottom: 1.6666667rem;
+    padding-left: 1rem;
+  }
+  .sm\:frame-content-lg h1 {
+    font-size: 2.6666667rem;
+    margin-top: 0;
+    margin-bottom: 0.8333333rem;
+    line-height: 1;
+  }
+  .sm\:frame-content-lg h2 {
+    font-size: 1.6666667rem;
+    margin-top: 1.8666667rem;
+    margin-bottom: 1.0666667rem;
+    line-height: 1.3333333;
+  }
+  .sm\:frame-content-lg h3 {
+    font-size: 1.3333333rem;
+    margin-top: 1.6666667rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.5;
+  }
+  .sm\:frame-content-lg h4 {
+    margin-top: 1.7777778rem;
+    margin-bottom: 0.4444444rem;
+    line-height: 1.5555556;
+  }
+  .sm\:frame-content-lg img {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .sm\:frame-content-lg video {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .sm\:frame-content-lg figure {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .sm\:frame-content-lg figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sm\:frame-content-lg figure figcaption {
+    font-size: 0.8888889rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+  .sm\:frame-content-lg code {
+    font-size: 0.8888889rem;
+  }
+  .sm\:frame-content-lg h2 code {
+    font-size: 0.8666667rem;
+  }
+  .sm\:frame-content-lg h3 code {
+    font-size: 0.875rem;
+  }
+  .sm\:frame-content-lg pre {
+    font-size: 0.8888889rem;
+    line-height: 1.75;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.375rrem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  .sm\:frame-content-lg ol {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-lg ul {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-lg li {
+    margin-top: 0.6666667rem;
+    margin-bottom: 0.6666667rem;
+  }
+  .sm\:frame-content-lg ol > li {
+    padding-left: 1.6666667rem;
+  }
+  .sm\:frame-content-lg ol > li:before {
+    left: 0;
+  }
+  .sm\:frame-content-lg ul > li {
+    padding-left: 1.6666667rem;
+  }
+  .sm\:frame-content-lg ul > li::before {
+    width: 0.3333333rem;
+    height: 0.3333333rem;
+    top: calc(0.8888889em - 0.1666667em);
+    left: 0.2222222rem;
+  }
+  .sm\:frame-content-lg > ul > li p {
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .sm\:frame-content-lg > ul > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .sm\:frame-content-lg > ul > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-lg > ol > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .sm\:frame-content-lg > ol > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-lg ol ol,
+  .sm\:frame-content-lg ol ul,
+  .sm\:frame-content-lg ul ol,
+  .sm\:frame-content-lg ul ul {
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .sm\:frame-content-lg hr {
+    margin-top: 3.1111111rem;
+    margin-bottom: 3.1111111rem;
+  }
+  .sm\:frame-content-lg hr + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-lg h2 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-lg h3 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-lg h4 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-lg table {
+    font-size: 0.8888889rem;
+    line-height: 1.5;
+  }
+  .sm\:frame-content-lg thead th {
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .sm\:frame-content-lg thead th:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content-lg thead th:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content-lg tbody td {
+    padding-top: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .sm\:frame-content-lg tbody td:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content-lg tbody td:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content-lg > :first-child {
+    margin-top: 0;
+  }
+  .sm\:frame-content-lg > :last-child {
+    margin-bottom: 0;
+  }
+  .sm\:frame-content-xl {
+    font-size: 1.25rrem;
+    line-height: 1.8;
+  }
+  .sm\:frame-content-xl p {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .sm\:frame-content-xl [class~="lead"] {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .sm\:frame-content-xl blockquote {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1.0666667rem;
+  }
+  .sm\:frame-content-xl h1 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0.8571429rem;
+    line-height: 1;
+  }
+  .sm\:frame-content-xl h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.8888889rem;
+    line-height: 1.1111111;
+  }
+  .sm\:frame-content-xl h3 {
+    font-size: 1.5rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.3333333;
+  }
+  .sm\:frame-content-xl h4 {
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  .sm\:frame-content-xl img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content-xl video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content-xl figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content-xl figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sm\:frame-content-xl figure figcaption {
+    font-size: 0.9rem;
+    line-height: 1.5555556;
+    margin-top: 1rem;
+  }
+  .sm\:frame-content-xl code {
+    font-size: 0.9rem;
+  }
+  .sm\:frame-content-xl h2 code {
+    font-size: 0.8611111rem;
+  }
+  .sm\:frame-content-xl h3 code {
+    font-size: 0.9rem;
+  }
+  .sm\:frame-content-xl pre {
+    font-size: 0.9rem;
+    line-height: 1.7777778;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rrem;
+    padding-top: 1.1111111rem;
+    padding-right: 1.3333333rem;
+    padding-bottom: 1.1111111rem;
+    padding-left: 1.3333333rem;
+  }
+  .sm\:frame-content-xl ol {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .sm\:frame-content-xl ul {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .sm\:frame-content-xl li {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .sm\:frame-content-xl ol > li {
+    padding-left: 1.8rem;
+  }
+  .sm\:frame-content-xl ol > li:before {
+    left: 0;
+  }
+  .sm\:frame-content-xl ul > li {
+    padding-left: 1.8rem;
+  }
+  .sm\:frame-content-xl ul > li::before {
+    width: 0.35rem;
+    height: 0.35rem;
+    top: calc(0.9em - 0.175em);
+    left: 0.25rem;
+  }
+  .sm\:frame-content-xl > ul > li p {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .sm\:frame-content-xl > ul > li > :first-child {
+    margin-top: 1.2rem;
+  }
+  .sm\:frame-content-xl > ul > li > :last-child {
+    margin-bottom: 1.2rem;
+  }
+  .sm\:frame-content-xl > ol > li > :first-child {
+    margin-top: 1.2rem;
+  }
+  .sm\:frame-content-xl > ol > li > :last-child {
+    margin-bottom: 1.2rem;
+  }
+  .sm\:frame-content-xl ol ol,
+  .sm\:frame-content-xl ol ul,
+  .sm\:frame-content-xl ul ol,
+  .sm\:frame-content-xl ul ul {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .sm\:frame-content-xl hr {
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+  .sm\:frame-content-xl hr + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-xl h2 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-xl h3 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-xl h4 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-xl table {
+    font-size: 0.9rem;
+    line-height: 1.5555556;
+  }
+  .sm\:frame-content-xl thead th {
+    padding-right: 0.6666667rem;
+    padding-bottom: 0.8888889rem;
+    padding-left: 0.6666667rem;
+  }
+  .sm\:frame-content-xl thead th:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content-xl thead th:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content-xl tbody td {
+    padding-top: 0.8888889rem;
+    padding-right: 0.6666667rem;
+    padding-bottom: 0.8888889rem;
+    padding-left: 0.6666667rem;
+  }
+  .sm\:frame-content-xl tbody td:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content-xl tbody td:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content-xl > :first-child {
+    margin-top: 0;
+  }
+  .sm\:frame-content-xl > :last-child {
+    margin-bottom: 0;
+  }
+  .sm\:frame-content-2xl {
+    font-size: 1.5rrem;
+    line-height: 1.6666667;
+  }
+  .sm\:frame-content-2xl p {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-2xl [class~="lead"] {
+    font-size: 1.25rem;
+    line-height: 1.4666667;
+    margin-top: 1.0666667rem;
+    margin-bottom: 1.0666667rem;
+  }
+  .sm\:frame-content-2xl blockquote {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+    padding-left: 1.1111111rem;
+  }
+  .sm\:frame-content-2xl h1 {
+    font-size: 2.6666667rem;
+    margin-top: 0;
+    margin-bottom: 0.875rem;
+    line-height: 1;
+  }
+  .sm\:frame-content-2xl h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8333333rem;
+    line-height: 1.0833333;
+  }
+  .sm\:frame-content-2xl h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.2222222;
+  }
+  .sm\:frame-content-2xl h4 {
+    margin-top: 1.6666667rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.5;
+  }
+  .sm\:frame-content-2xl img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content-2xl video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content-2xl figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .sm\:frame-content-2xl figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sm\:frame-content-2xl figure figcaption {
+    font-size: 0.8333333rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+  .sm\:frame-content-2xl code {
+    font-size: 0.8333333rem;
+  }
+  .sm\:frame-content-2xl h2 code {
+    font-size: 0.875rem;
+  }
+  .sm\:frame-content-2xl h3 code {
+    font-size: 0.8888889rem;
+  }
+  .sm\:frame-content-2xl pre {
+    font-size: 0.8333333rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rrem;
+    padding-top: 1.2rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.6rem;
+  }
+  .sm\:frame-content-2xl ol {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-2xl ul {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-2xl li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .sm\:frame-content-2xl ol > li {
+    padding-left: 1.6666667rem;
+  }
+  .sm\:frame-content-2xl ol > li:before {
+    left: 0;
+  }
+  .sm\:frame-content-2xl ul > li {
+    padding-left: 1.6666667rem;
+  }
+  .sm\:frame-content-2xl ul > li::before {
+    width: 0.3333333rem;
+    height: 0.3333333rem;
+    top: calc(0.8333333em - 0.1666667em);
+    left: 0.25rem;
+  }
+  .sm\:frame-content-2xl > ul > li p {
+    margin-top: 0.8333333rem;
+    margin-bottom: 0.8333333rem;
+  }
+  .sm\:frame-content-2xl > ul > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .sm\:frame-content-2xl > ul > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-2xl > ol > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .sm\:frame-content-2xl > ol > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .sm\:frame-content-2xl ol ol,
+  .sm\:frame-content-2xl ol ul,
+  .sm\:frame-content-2xl ul ol,
+  .sm\:frame-content-2xl ul ul {
+    margin-top: 0.6666667rem;
+    margin-bottom: 0.6666667rem;
+  }
+  .sm\:frame-content-2xl hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .sm\:frame-content-2xl hr + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-2xl h2 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-2xl h3 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-2xl h4 + * {
+    margin-top: 0;
+  }
+  .sm\:frame-content-2xl table {
+    font-size: 0.8333333rem;
+    line-height: 1.4;
+  }
+  .sm\:frame-content-2xl thead th {
+    padding-right: 0.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .sm\:frame-content-2xl thead th:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content-2xl thead th:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content-2xl tbody td {
+    padding-top: 0.8rem;
+    padding-right: 0.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .sm\:frame-content-2xl tbody td:first-child {
+    padding-left: 0;
+  }
+  .sm\:frame-content-2xl tbody td:last-child {
+    padding-right: 0;
+  }
+  .sm\:frame-content-2xl > :first-child {
+    margin-top: 0;
+  }
+  .sm\:frame-content-2xl > :last-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .md\:frame-content {
+    color: #4a5568;
+    max-width: 65ch;
+  }
+  .md\:frame-content [class~="lead"] {
+    color: #4a5568;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .md\:frame-content a {
+    color: #1a202c;
+    text-decoration: underline;
+  }
+  .md\:frame-content strong {
+    color: #1a202c;
+    font-weight: 600;
+  }
+  .md\:frame-content ol {
+    counter-reset: list-counter;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .md\:frame-content ol > li {
+    position: relative;
+    counter-increment: list-counter;
+    padding-left: 1.75rem;
+  }
+  .md\:frame-content ol > li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    font-weight: 400;
+    color: #718096;
+  }
+  .md\:frame-content ul > li {
+    position: relative;
+    padding-left: 1.75rem;
+  }
+  .md\:frame-content ul > li::before {
+    content: "";
+    position: absolute;
+    background-color: #cbd5e0;
+    border-radius: 50%;
+    width: 0.375rem;
+    height: 0.375rem;
+    top: calc(0.875em - 0.1875em);
+    left: 0.25rem;
+  }
+  .md\:frame-content hr {
+    border-color: #e2e8f0;
+    border-top-width: 1px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .md\:frame-content blockquote {
+    font-weight: 500;
+    font-style: italic;
+    color: #1a202c;
+    border-left-width: 0.25rrem;
+    border-left-color: #e2e8f0;
+    quotes: "\201C""\201D""\2018""\2019";
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1rem;
+  }
+  .md\:frame-content blockquote p:first-of-type::before {
+    content: open-quote;
+  }
+  .md\:frame-content blockquote p:last-of-type::after {
+    content: close-quote;
+  }
+  .md\:frame-content h1 {
+    color: #1a202c;
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: 0.8888889rem;
+    line-height: 1.1111111;
+  }
+  .md\:frame-content h2 {
+    color: #1a202c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3333333;
+  }
+  .md\:frame-content h3 {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  .md\:frame-content h4 {
+    color: #1a202c;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  .md\:frame-content figure figcaption {
+    color: #718096;
+    font-size: 0.875rem;
+    line-height: 1.4285714;
+    margin-top: 0.8571429rem;
+  }
+  .md\:frame-content code {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  .md\:frame-content code::before {
+    content: "`";
+  }
+  .md\:frame-content code::after {
+    content: "`";
+  }
+  .md\:frame-content pre {
+    color: #e2e8f0;
+    background-color: #2d3748;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+    border-radius: 0.375rrem;
+    padding-top: 0.8571429rem;
+    padding-right: 1.1428571rem;
+    padding-bottom: 0.8571429rem;
+    padding-left: 1.1428571rem;
+  }
+  .md\:frame-content pre code {
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 0;
+    padding: 0;
+    font-weight: 400;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+  }
+  .md\:frame-content pre code::before {
+    content: "";
+  }
+  .md\:frame-content pre code::after {
+    content: "";
+  }
+  .md\:frame-content table {
+    width: 100%;
+    table-layout: auto;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+  }
+  .md\:frame-content thead {
+    color: #1a202c;
+    font-weight: 600;
+    border-bottom-width: 1px;
+    border-bottom-color: #cbd5e0;
+  }
+  .md\:frame-content thead th {
+    vertical-align: bottom;
+    padding-right: 0.5714286rem;
+    padding-bottom: 0.5714286rem;
+    padding-left: 0.5714286rem;
+  }
+  .md\:frame-content tbody tr {
+    border-bottom-width: 1px;
+    border-bottom-color: #e2e8f0;
+  }
+  .md\:frame-content tbody tr:last-child {
+    border-bottom-width: 0;
+  }
+  .md\:frame-content tbody td {
+    vertical-align: top;
+    padding-top: 0.5714286rem;
+    padding-right: 0.5714286rem;
+    padding-bottom: 0.5714286rem;
+    padding-left: 0.5714286rem;
+  }
+  .md\:frame-content {
+    font-size: 1rrem;
+    line-height: 1.75;
+  }
+  .md\:frame-content p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .md\:frame-content img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .md\:frame-content h2 code {
+    font-size: 0.875rem;
+  }
+  .md\:frame-content h3 code {
+    font-size: 0.9rem;
+  }
+  .md\:frame-content ul {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .md\:frame-content li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .md\:frame-content ol > li:before {
+    left: 0;
+  }
+  .md\:frame-content > ul > li p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .md\:frame-content > ul > li > :first-child {
+    margin-top: 1.25rem;
+  }
+  .md\:frame-content > ul > li > :last-child {
+    margin-bottom: 1.25rem;
+  }
+  .md\:frame-content > ol > li > :first-child {
+    margin-top: 1.25rem;
+  }
+  .md\:frame-content > ol > li > :last-child {
+    margin-bottom: 1.25rem;
+  }
+  .md\:frame-content ol ol,
+  .md\:frame-content ol ul,
+  .md\:frame-content ul ol,
+  .md\:frame-content ul ul {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .md\:frame-content hr + * {
+    margin-top: 0;
+  }
+  .md\:frame-content h2 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content h3 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content h4 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content thead th:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content thead th:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content tbody td:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content tbody td:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content > :first-child {
+    margin-top: 0;
+  }
+  .md\:frame-content > :last-child {
+    margin-bottom: 0;
+  }
+  .md\:frame-content-sm {
+    font-size: 0.875rrem;
+    line-height: 1.7142857;
+  }
+  .md\:frame-content-sm p {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .md\:frame-content-sm [class~="lead"] {
+    font-size: 1.2857143rem;
+    line-height: 1.5555556;
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .md\:frame-content-sm blockquote {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+    padding-left: 1.1111111rem;
+  }
+  .md\:frame-content-sm h1 {
+    font-size: 2.1428571rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+  }
+  .md\:frame-content-sm h2 {
+    font-size: 1.4285714rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+  .md\:frame-content-sm h3 {
+    font-size: 1.2857143rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.4444444rem;
+    line-height: 1.5555556;
+  }
+  .md\:frame-content-sm h4 {
+    margin-top: 1.4285714rem;
+    margin-bottom: 0.5714286rem;
+    line-height: 1.4285714;
+  }
+  .md\:frame-content-sm img {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .md\:frame-content-sm video {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .md\:frame-content-sm figure {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .md\:frame-content-sm figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .md\:frame-content-sm figure figcaption {
+    font-size: 0.8571429rem;
+    line-height: 1.3333333;
+    margin-top: 0.6666667rem;
+  }
+  .md\:frame-content-sm code {
+    font-size: 0.8571429rem;
+  }
+  .md\:frame-content-sm h2 code {
+    font-size: 0.9rem;
+  }
+  .md\:frame-content-sm h3 code {
+    font-size: 0.8888889rem;
+  }
+  .md\:frame-content-sm pre {
+    font-size: 0.8571429rem;
+    line-height: 1.6666667;
+    margin-top: 1.6666667rem;
+    margin-bottom: 1.6666667rem;
+    border-radius: 0.25rrem;
+    padding-top: 0.6666667rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .md\:frame-content-sm ol {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .md\:frame-content-sm ul {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .md\:frame-content-sm li {
+    margin-top: 0.2857143rem;
+    margin-bottom: 0.2857143rem;
+  }
+  .md\:frame-content-sm ol > li {
+    padding-left: 1.5714286rem;
+  }
+  .md\:frame-content-sm ol > li:before {
+    left: 0;
+  }
+  .md\:frame-content-sm ul > li {
+    padding-left: 1.5714286rem;
+  }
+  .md\:frame-content-sm ul > li::before {
+    height: 0.3571429rem;
+    width: 0.3571429rem;
+    top: calc(0.8571429em - 0.1785714em);
+    left: 0.2142857rem;
+  }
+  .md\:frame-content-sm > ul > li p {
+    margin-top: 0.5714286rem;
+    margin-bottom: 0.5714286rem;
+  }
+  .md\:frame-content-sm > ul > li > :first-child {
+    margin-top: 1.1428571rem;
+  }
+  .md\:frame-content-sm > ul > li > :last-child {
+    margin-bottom: 1.1428571rem;
+  }
+  .md\:frame-content-sm > ol > li > :first-child {
+    margin-top: 1.1428571rem;
+  }
+  .md\:frame-content-sm > ol > li > :last-child {
+    margin-bottom: 1.1428571rem;
+  }
+  .md\:frame-content-sm ol ol,
+  .md\:frame-content-sm ol ul,
+  .md\:frame-content-sm ul ol,
+  .md\:frame-content-sm ul ul {
+    margin-top: 0.5714286rem;
+    margin-bottom: 0.5714286rem;
+  }
+  .md\:frame-content-sm hr {
+    margin-top: 2.8571429rem;
+    margin-bottom: 2.8571429rem;
+  }
+  .md\:frame-content-sm hr + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-sm h2 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-sm h3 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-sm h4 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-sm table {
+    font-size: 0.8571429rem;
+    line-height: 1.5;
+  }
+  .md\:frame-content-sm thead th {
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .md\:frame-content-sm thead th:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content-sm thead th:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content-sm tbody td {
+    padding-top: 0.6666667rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .md\:frame-content-sm tbody td:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content-sm tbody td:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content-sm > :first-child {
+    margin-top: 0;
+  }
+  .md\:frame-content-sm > :last-child {
+    margin-bottom: 0;
+  }
+  .md\:frame-content-lg {
+    font-size: 1.125rrem;
+    line-height: 1.7777778;
+  }
+  .md\:frame-content-lg p {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-lg [class~="lead"] {
+    font-size: 1.2222222rem;
+    line-height: 1.4545455;
+    margin-top: 1.0909091rem;
+    margin-bottom: 1.0909091rem;
+  }
+  .md\:frame-content-lg blockquote {
+    margin-top: 1.6666667rem;
+    margin-bottom: 1.6666667rem;
+    padding-left: 1rem;
+  }
+  .md\:frame-content-lg h1 {
+    font-size: 2.6666667rem;
+    margin-top: 0;
+    margin-bottom: 0.8333333rem;
+    line-height: 1;
+  }
+  .md\:frame-content-lg h2 {
+    font-size: 1.6666667rem;
+    margin-top: 1.8666667rem;
+    margin-bottom: 1.0666667rem;
+    line-height: 1.3333333;
+  }
+  .md\:frame-content-lg h3 {
+    font-size: 1.3333333rem;
+    margin-top: 1.6666667rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.5;
+  }
+  .md\:frame-content-lg h4 {
+    margin-top: 1.7777778rem;
+    margin-bottom: 0.4444444rem;
+    line-height: 1.5555556;
+  }
+  .md\:frame-content-lg img {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .md\:frame-content-lg video {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .md\:frame-content-lg figure {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .md\:frame-content-lg figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .md\:frame-content-lg figure figcaption {
+    font-size: 0.8888889rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+  .md\:frame-content-lg code {
+    font-size: 0.8888889rem;
+  }
+  .md\:frame-content-lg h2 code {
+    font-size: 0.8666667rem;
+  }
+  .md\:frame-content-lg h3 code {
+    font-size: 0.875rem;
+  }
+  .md\:frame-content-lg pre {
+    font-size: 0.8888889rem;
+    line-height: 1.75;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.375rrem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  .md\:frame-content-lg ol {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-lg ul {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-lg li {
+    margin-top: 0.6666667rem;
+    margin-bottom: 0.6666667rem;
+  }
+  .md\:frame-content-lg ol > li {
+    padding-left: 1.6666667rem;
+  }
+  .md\:frame-content-lg ol > li:before {
+    left: 0;
+  }
+  .md\:frame-content-lg ul > li {
+    padding-left: 1.6666667rem;
+  }
+  .md\:frame-content-lg ul > li::before {
+    width: 0.3333333rem;
+    height: 0.3333333rem;
+    top: calc(0.8888889em - 0.1666667em);
+    left: 0.2222222rem;
+  }
+  .md\:frame-content-lg > ul > li p {
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .md\:frame-content-lg > ul > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .md\:frame-content-lg > ul > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-lg > ol > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .md\:frame-content-lg > ol > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-lg ol ol,
+  .md\:frame-content-lg ol ul,
+  .md\:frame-content-lg ul ol,
+  .md\:frame-content-lg ul ul {
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .md\:frame-content-lg hr {
+    margin-top: 3.1111111rem;
+    margin-bottom: 3.1111111rem;
+  }
+  .md\:frame-content-lg hr + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-lg h2 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-lg h3 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-lg h4 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-lg table {
+    font-size: 0.8888889rem;
+    line-height: 1.5;
+  }
+  .md\:frame-content-lg thead th {
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .md\:frame-content-lg thead th:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content-lg thead th:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content-lg tbody td {
+    padding-top: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .md\:frame-content-lg tbody td:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content-lg tbody td:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content-lg > :first-child {
+    margin-top: 0;
+  }
+  .md\:frame-content-lg > :last-child {
+    margin-bottom: 0;
+  }
+  .md\:frame-content-xl {
+    font-size: 1.25rrem;
+    line-height: 1.8;
+  }
+  .md\:frame-content-xl p {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .md\:frame-content-xl [class~="lead"] {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .md\:frame-content-xl blockquote {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1.0666667rem;
+  }
+  .md\:frame-content-xl h1 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0.8571429rem;
+    line-height: 1;
+  }
+  .md\:frame-content-xl h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.8888889rem;
+    line-height: 1.1111111;
+  }
+  .md\:frame-content-xl h3 {
+    font-size: 1.5rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.3333333;
+  }
+  .md\:frame-content-xl h4 {
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  .md\:frame-content-xl img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content-xl video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content-xl figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content-xl figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .md\:frame-content-xl figure figcaption {
+    font-size: 0.9rem;
+    line-height: 1.5555556;
+    margin-top: 1rem;
+  }
+  .md\:frame-content-xl code {
+    font-size: 0.9rem;
+  }
+  .md\:frame-content-xl h2 code {
+    font-size: 0.8611111rem;
+  }
+  .md\:frame-content-xl h3 code {
+    font-size: 0.9rem;
+  }
+  .md\:frame-content-xl pre {
+    font-size: 0.9rem;
+    line-height: 1.7777778;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rrem;
+    padding-top: 1.1111111rem;
+    padding-right: 1.3333333rem;
+    padding-bottom: 1.1111111rem;
+    padding-left: 1.3333333rem;
+  }
+  .md\:frame-content-xl ol {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .md\:frame-content-xl ul {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .md\:frame-content-xl li {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .md\:frame-content-xl ol > li {
+    padding-left: 1.8rem;
+  }
+  .md\:frame-content-xl ol > li:before {
+    left: 0;
+  }
+  .md\:frame-content-xl ul > li {
+    padding-left: 1.8rem;
+  }
+  .md\:frame-content-xl ul > li::before {
+    width: 0.35rem;
+    height: 0.35rem;
+    top: calc(0.9em - 0.175em);
+    left: 0.25rem;
+  }
+  .md\:frame-content-xl > ul > li p {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .md\:frame-content-xl > ul > li > :first-child {
+    margin-top: 1.2rem;
+  }
+  .md\:frame-content-xl > ul > li > :last-child {
+    margin-bottom: 1.2rem;
+  }
+  .md\:frame-content-xl > ol > li > :first-child {
+    margin-top: 1.2rem;
+  }
+  .md\:frame-content-xl > ol > li > :last-child {
+    margin-bottom: 1.2rem;
+  }
+  .md\:frame-content-xl ol ol,
+  .md\:frame-content-xl ol ul,
+  .md\:frame-content-xl ul ol,
+  .md\:frame-content-xl ul ul {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .md\:frame-content-xl hr {
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+  .md\:frame-content-xl hr + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-xl h2 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-xl h3 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-xl h4 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-xl table {
+    font-size: 0.9rem;
+    line-height: 1.5555556;
+  }
+  .md\:frame-content-xl thead th {
+    padding-right: 0.6666667rem;
+    padding-bottom: 0.8888889rem;
+    padding-left: 0.6666667rem;
+  }
+  .md\:frame-content-xl thead th:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content-xl thead th:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content-xl tbody td {
+    padding-top: 0.8888889rem;
+    padding-right: 0.6666667rem;
+    padding-bottom: 0.8888889rem;
+    padding-left: 0.6666667rem;
+  }
+  .md\:frame-content-xl tbody td:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content-xl tbody td:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content-xl > :first-child {
+    margin-top: 0;
+  }
+  .md\:frame-content-xl > :last-child {
+    margin-bottom: 0;
+  }
+  .md\:frame-content-2xl {
+    font-size: 1.5rrem;
+    line-height: 1.6666667;
+  }
+  .md\:frame-content-2xl p {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-2xl [class~="lead"] {
+    font-size: 1.25rem;
+    line-height: 1.4666667;
+    margin-top: 1.0666667rem;
+    margin-bottom: 1.0666667rem;
+  }
+  .md\:frame-content-2xl blockquote {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+    padding-left: 1.1111111rem;
+  }
+  .md\:frame-content-2xl h1 {
+    font-size: 2.6666667rem;
+    margin-top: 0;
+    margin-bottom: 0.875rem;
+    line-height: 1;
+  }
+  .md\:frame-content-2xl h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8333333rem;
+    line-height: 1.0833333;
+  }
+  .md\:frame-content-2xl h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.2222222;
+  }
+  .md\:frame-content-2xl h4 {
+    margin-top: 1.6666667rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.5;
+  }
+  .md\:frame-content-2xl img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content-2xl video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content-2xl figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .md\:frame-content-2xl figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .md\:frame-content-2xl figure figcaption {
+    font-size: 0.8333333rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+  .md\:frame-content-2xl code {
+    font-size: 0.8333333rem;
+  }
+  .md\:frame-content-2xl h2 code {
+    font-size: 0.875rem;
+  }
+  .md\:frame-content-2xl h3 code {
+    font-size: 0.8888889rem;
+  }
+  .md\:frame-content-2xl pre {
+    font-size: 0.8333333rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rrem;
+    padding-top: 1.2rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.6rem;
+  }
+  .md\:frame-content-2xl ol {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-2xl ul {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-2xl li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .md\:frame-content-2xl ol > li {
+    padding-left: 1.6666667rem;
+  }
+  .md\:frame-content-2xl ol > li:before {
+    left: 0;
+  }
+  .md\:frame-content-2xl ul > li {
+    padding-left: 1.6666667rem;
+  }
+  .md\:frame-content-2xl ul > li::before {
+    width: 0.3333333rem;
+    height: 0.3333333rem;
+    top: calc(0.8333333em - 0.1666667em);
+    left: 0.25rem;
+  }
+  .md\:frame-content-2xl > ul > li p {
+    margin-top: 0.8333333rem;
+    margin-bottom: 0.8333333rem;
+  }
+  .md\:frame-content-2xl > ul > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .md\:frame-content-2xl > ul > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-2xl > ol > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .md\:frame-content-2xl > ol > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .md\:frame-content-2xl ol ol,
+  .md\:frame-content-2xl ol ul,
+  .md\:frame-content-2xl ul ol,
+  .md\:frame-content-2xl ul ul {
+    margin-top: 0.6666667rem;
+    margin-bottom: 0.6666667rem;
+  }
+  .md\:frame-content-2xl hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .md\:frame-content-2xl hr + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-2xl h2 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-2xl h3 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-2xl h4 + * {
+    margin-top: 0;
+  }
+  .md\:frame-content-2xl table {
+    font-size: 0.8333333rem;
+    line-height: 1.4;
+  }
+  .md\:frame-content-2xl thead th {
+    padding-right: 0.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .md\:frame-content-2xl thead th:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content-2xl thead th:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content-2xl tbody td {
+    padding-top: 0.8rem;
+    padding-right: 0.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .md\:frame-content-2xl tbody td:first-child {
+    padding-left: 0;
+  }
+  .md\:frame-content-2xl tbody td:last-child {
+    padding-right: 0;
+  }
+  .md\:frame-content-2xl > :first-child {
+    margin-top: 0;
+  }
+  .md\:frame-content-2xl > :last-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:frame-content {
+    color: #4a5568;
+    max-width: 65ch;
+  }
+  .lg\:frame-content [class~="lead"] {
+    color: #4a5568;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .lg\:frame-content a {
+    color: #1a202c;
+    text-decoration: underline;
+  }
+  .lg\:frame-content strong {
+    color: #1a202c;
+    font-weight: 600;
+  }
+  .lg\:frame-content ol {
+    counter-reset: list-counter;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .lg\:frame-content ol > li {
+    position: relative;
+    counter-increment: list-counter;
+    padding-left: 1.75rem;
+  }
+  .lg\:frame-content ol > li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    font-weight: 400;
+    color: #718096;
+  }
+  .lg\:frame-content ul > li {
+    position: relative;
+    padding-left: 1.75rem;
+  }
+  .lg\:frame-content ul > li::before {
+    content: "";
+    position: absolute;
+    background-color: #cbd5e0;
+    border-radius: 50%;
+    width: 0.375rem;
+    height: 0.375rem;
+    top: calc(0.875em - 0.1875em);
+    left: 0.25rem;
+  }
+  .lg\:frame-content hr {
+    border-color: #e2e8f0;
+    border-top-width: 1px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .lg\:frame-content blockquote {
+    font-weight: 500;
+    font-style: italic;
+    color: #1a202c;
+    border-left-width: 0.25rrem;
+    border-left-color: #e2e8f0;
+    quotes: "\201C""\201D""\2018""\2019";
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1rem;
+  }
+  .lg\:frame-content blockquote p:first-of-type::before {
+    content: open-quote;
+  }
+  .lg\:frame-content blockquote p:last-of-type::after {
+    content: close-quote;
+  }
+  .lg\:frame-content h1 {
+    color: #1a202c;
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: 0.8888889rem;
+    line-height: 1.1111111;
+  }
+  .lg\:frame-content h2 {
+    color: #1a202c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3333333;
+  }
+  .lg\:frame-content h3 {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  .lg\:frame-content h4 {
+    color: #1a202c;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  .lg\:frame-content figure figcaption {
+    color: #718096;
+    font-size: 0.875rem;
+    line-height: 1.4285714;
+    margin-top: 0.8571429rem;
+  }
+  .lg\:frame-content code {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  .lg\:frame-content code::before {
+    content: "`";
+  }
+  .lg\:frame-content code::after {
+    content: "`";
+  }
+  .lg\:frame-content pre {
+    color: #e2e8f0;
+    background-color: #2d3748;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+    border-radius: 0.375rrem;
+    padding-top: 0.8571429rem;
+    padding-right: 1.1428571rem;
+    padding-bottom: 0.8571429rem;
+    padding-left: 1.1428571rem;
+  }
+  .lg\:frame-content pre code {
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 0;
+    padding: 0;
+    font-weight: 400;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+  }
+  .lg\:frame-content pre code::before {
+    content: "";
+  }
+  .lg\:frame-content pre code::after {
+    content: "";
+  }
+  .lg\:frame-content table {
+    width: 100%;
+    table-layout: auto;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+  }
+  .lg\:frame-content thead {
+    color: #1a202c;
+    font-weight: 600;
+    border-bottom-width: 1px;
+    border-bottom-color: #cbd5e0;
+  }
+  .lg\:frame-content thead th {
+    vertical-align: bottom;
+    padding-right: 0.5714286rem;
+    padding-bottom: 0.5714286rem;
+    padding-left: 0.5714286rem;
+  }
+  .lg\:frame-content tbody tr {
+    border-bottom-width: 1px;
+    border-bottom-color: #e2e8f0;
+  }
+  .lg\:frame-content tbody tr:last-child {
+    border-bottom-width: 0;
+  }
+  .lg\:frame-content tbody td {
+    vertical-align: top;
+    padding-top: 0.5714286rem;
+    padding-right: 0.5714286rem;
+    padding-bottom: 0.5714286rem;
+    padding-left: 0.5714286rem;
+  }
+  .lg\:frame-content {
+    font-size: 1rrem;
+    line-height: 1.75;
+  }
+  .lg\:frame-content p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .lg\:frame-content img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .lg\:frame-content h2 code {
+    font-size: 0.875rem;
+  }
+  .lg\:frame-content h3 code {
+    font-size: 0.9rem;
+  }
+  .lg\:frame-content ul {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .lg\:frame-content li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .lg\:frame-content ol > li:before {
+    left: 0;
+  }
+  .lg\:frame-content > ul > li p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .lg\:frame-content > ul > li > :first-child {
+    margin-top: 1.25rem;
+  }
+  .lg\:frame-content > ul > li > :last-child {
+    margin-bottom: 1.25rem;
+  }
+  .lg\:frame-content > ol > li > :first-child {
+    margin-top: 1.25rem;
+  }
+  .lg\:frame-content > ol > li > :last-child {
+    margin-bottom: 1.25rem;
+  }
+  .lg\:frame-content ol ol,
+  .lg\:frame-content ol ul,
+  .lg\:frame-content ul ol,
+  .lg\:frame-content ul ul {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .lg\:frame-content hr + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content h2 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content h3 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content h4 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content thead th:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content thead th:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content tbody td:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content tbody td:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content > :first-child {
+    margin-top: 0;
+  }
+  .lg\:frame-content > :last-child {
+    margin-bottom: 0;
+  }
+  .lg\:frame-content-sm {
+    font-size: 0.875rrem;
+    line-height: 1.7142857;
+  }
+  .lg\:frame-content-sm p {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .lg\:frame-content-sm [class~="lead"] {
+    font-size: 1.2857143rem;
+    line-height: 1.5555556;
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .lg\:frame-content-sm blockquote {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+    padding-left: 1.1111111rem;
+  }
+  .lg\:frame-content-sm h1 {
+    font-size: 2.1428571rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+  }
+  .lg\:frame-content-sm h2 {
+    font-size: 1.4285714rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+  .lg\:frame-content-sm h3 {
+    font-size: 1.2857143rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.4444444rem;
+    line-height: 1.5555556;
+  }
+  .lg\:frame-content-sm h4 {
+    margin-top: 1.4285714rem;
+    margin-bottom: 0.5714286rem;
+    line-height: 1.4285714;
+  }
+  .lg\:frame-content-sm img {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .lg\:frame-content-sm video {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .lg\:frame-content-sm figure {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .lg\:frame-content-sm figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .lg\:frame-content-sm figure figcaption {
+    font-size: 0.8571429rem;
+    line-height: 1.3333333;
+    margin-top: 0.6666667rem;
+  }
+  .lg\:frame-content-sm code {
+    font-size: 0.8571429rem;
+  }
+  .lg\:frame-content-sm h2 code {
+    font-size: 0.9rem;
+  }
+  .lg\:frame-content-sm h3 code {
+    font-size: 0.8888889rem;
+  }
+  .lg\:frame-content-sm pre {
+    font-size: 0.8571429rem;
+    line-height: 1.6666667;
+    margin-top: 1.6666667rem;
+    margin-bottom: 1.6666667rem;
+    border-radius: 0.25rrem;
+    padding-top: 0.6666667rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .lg\:frame-content-sm ol {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .lg\:frame-content-sm ul {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .lg\:frame-content-sm li {
+    margin-top: 0.2857143rem;
+    margin-bottom: 0.2857143rem;
+  }
+  .lg\:frame-content-sm ol > li {
+    padding-left: 1.5714286rem;
+  }
+  .lg\:frame-content-sm ol > li:before {
+    left: 0;
+  }
+  .lg\:frame-content-sm ul > li {
+    padding-left: 1.5714286rem;
+  }
+  .lg\:frame-content-sm ul > li::before {
+    height: 0.3571429rem;
+    width: 0.3571429rem;
+    top: calc(0.8571429em - 0.1785714em);
+    left: 0.2142857rem;
+  }
+  .lg\:frame-content-sm > ul > li p {
+    margin-top: 0.5714286rem;
+    margin-bottom: 0.5714286rem;
+  }
+  .lg\:frame-content-sm > ul > li > :first-child {
+    margin-top: 1.1428571rem;
+  }
+  .lg\:frame-content-sm > ul > li > :last-child {
+    margin-bottom: 1.1428571rem;
+  }
+  .lg\:frame-content-sm > ol > li > :first-child {
+    margin-top: 1.1428571rem;
+  }
+  .lg\:frame-content-sm > ol > li > :last-child {
+    margin-bottom: 1.1428571rem;
+  }
+  .lg\:frame-content-sm ol ol,
+  .lg\:frame-content-sm ol ul,
+  .lg\:frame-content-sm ul ol,
+  .lg\:frame-content-sm ul ul {
+    margin-top: 0.5714286rem;
+    margin-bottom: 0.5714286rem;
+  }
+  .lg\:frame-content-sm hr {
+    margin-top: 2.8571429rem;
+    margin-bottom: 2.8571429rem;
+  }
+  .lg\:frame-content-sm hr + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-sm h2 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-sm h3 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-sm h4 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-sm table {
+    font-size: 0.8571429rem;
+    line-height: 1.5;
+  }
+  .lg\:frame-content-sm thead th {
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .lg\:frame-content-sm thead th:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content-sm thead th:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content-sm tbody td {
+    padding-top: 0.6666667rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .lg\:frame-content-sm tbody td:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content-sm tbody td:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content-sm > :first-child {
+    margin-top: 0;
+  }
+  .lg\:frame-content-sm > :last-child {
+    margin-bottom: 0;
+  }
+  .lg\:frame-content-lg {
+    font-size: 1.125rrem;
+    line-height: 1.7777778;
+  }
+  .lg\:frame-content-lg p {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-lg [class~="lead"] {
+    font-size: 1.2222222rem;
+    line-height: 1.4545455;
+    margin-top: 1.0909091rem;
+    margin-bottom: 1.0909091rem;
+  }
+  .lg\:frame-content-lg blockquote {
+    margin-top: 1.6666667rem;
+    margin-bottom: 1.6666667rem;
+    padding-left: 1rem;
+  }
+  .lg\:frame-content-lg h1 {
+    font-size: 2.6666667rem;
+    margin-top: 0;
+    margin-bottom: 0.8333333rem;
+    line-height: 1;
+  }
+  .lg\:frame-content-lg h2 {
+    font-size: 1.6666667rem;
+    margin-top: 1.8666667rem;
+    margin-bottom: 1.0666667rem;
+    line-height: 1.3333333;
+  }
+  .lg\:frame-content-lg h3 {
+    font-size: 1.3333333rem;
+    margin-top: 1.6666667rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.5;
+  }
+  .lg\:frame-content-lg h4 {
+    margin-top: 1.7777778rem;
+    margin-bottom: 0.4444444rem;
+    line-height: 1.5555556;
+  }
+  .lg\:frame-content-lg img {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .lg\:frame-content-lg video {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .lg\:frame-content-lg figure {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .lg\:frame-content-lg figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .lg\:frame-content-lg figure figcaption {
+    font-size: 0.8888889rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+  .lg\:frame-content-lg code {
+    font-size: 0.8888889rem;
+  }
+  .lg\:frame-content-lg h2 code {
+    font-size: 0.8666667rem;
+  }
+  .lg\:frame-content-lg h3 code {
+    font-size: 0.875rem;
+  }
+  .lg\:frame-content-lg pre {
+    font-size: 0.8888889rem;
+    line-height: 1.75;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.375rrem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  .lg\:frame-content-lg ol {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-lg ul {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-lg li {
+    margin-top: 0.6666667rem;
+    margin-bottom: 0.6666667rem;
+  }
+  .lg\:frame-content-lg ol > li {
+    padding-left: 1.6666667rem;
+  }
+  .lg\:frame-content-lg ol > li:before {
+    left: 0;
+  }
+  .lg\:frame-content-lg ul > li {
+    padding-left: 1.6666667rem;
+  }
+  .lg\:frame-content-lg ul > li::before {
+    width: 0.3333333rem;
+    height: 0.3333333rem;
+    top: calc(0.8888889em - 0.1666667em);
+    left: 0.2222222rem;
+  }
+  .lg\:frame-content-lg > ul > li p {
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .lg\:frame-content-lg > ul > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .lg\:frame-content-lg > ul > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-lg > ol > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .lg\:frame-content-lg > ol > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-lg ol ol,
+  .lg\:frame-content-lg ol ul,
+  .lg\:frame-content-lg ul ol,
+  .lg\:frame-content-lg ul ul {
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .lg\:frame-content-lg hr {
+    margin-top: 3.1111111rem;
+    margin-bottom: 3.1111111rem;
+  }
+  .lg\:frame-content-lg hr + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-lg h2 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-lg h3 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-lg h4 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-lg table {
+    font-size: 0.8888889rem;
+    line-height: 1.5;
+  }
+  .lg\:frame-content-lg thead th {
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .lg\:frame-content-lg thead th:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content-lg thead th:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content-lg tbody td {
+    padding-top: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .lg\:frame-content-lg tbody td:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content-lg tbody td:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content-lg > :first-child {
+    margin-top: 0;
+  }
+  .lg\:frame-content-lg > :last-child {
+    margin-bottom: 0;
+  }
+  .lg\:frame-content-xl {
+    font-size: 1.25rrem;
+    line-height: 1.8;
+  }
+  .lg\:frame-content-xl p {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .lg\:frame-content-xl [class~="lead"] {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .lg\:frame-content-xl blockquote {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1.0666667rem;
+  }
+  .lg\:frame-content-xl h1 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0.8571429rem;
+    line-height: 1;
+  }
+  .lg\:frame-content-xl h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.8888889rem;
+    line-height: 1.1111111;
+  }
+  .lg\:frame-content-xl h3 {
+    font-size: 1.5rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.3333333;
+  }
+  .lg\:frame-content-xl h4 {
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  .lg\:frame-content-xl img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content-xl video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content-xl figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content-xl figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .lg\:frame-content-xl figure figcaption {
+    font-size: 0.9rem;
+    line-height: 1.5555556;
+    margin-top: 1rem;
+  }
+  .lg\:frame-content-xl code {
+    font-size: 0.9rem;
+  }
+  .lg\:frame-content-xl h2 code {
+    font-size: 0.8611111rem;
+  }
+  .lg\:frame-content-xl h3 code {
+    font-size: 0.9rem;
+  }
+  .lg\:frame-content-xl pre {
+    font-size: 0.9rem;
+    line-height: 1.7777778;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rrem;
+    padding-top: 1.1111111rem;
+    padding-right: 1.3333333rem;
+    padding-bottom: 1.1111111rem;
+    padding-left: 1.3333333rem;
+  }
+  .lg\:frame-content-xl ol {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .lg\:frame-content-xl ul {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .lg\:frame-content-xl li {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .lg\:frame-content-xl ol > li {
+    padding-left: 1.8rem;
+  }
+  .lg\:frame-content-xl ol > li:before {
+    left: 0;
+  }
+  .lg\:frame-content-xl ul > li {
+    padding-left: 1.8rem;
+  }
+  .lg\:frame-content-xl ul > li::before {
+    width: 0.35rem;
+    height: 0.35rem;
+    top: calc(0.9em - 0.175em);
+    left: 0.25rem;
+  }
+  .lg\:frame-content-xl > ul > li p {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .lg\:frame-content-xl > ul > li > :first-child {
+    margin-top: 1.2rem;
+  }
+  .lg\:frame-content-xl > ul > li > :last-child {
+    margin-bottom: 1.2rem;
+  }
+  .lg\:frame-content-xl > ol > li > :first-child {
+    margin-top: 1.2rem;
+  }
+  .lg\:frame-content-xl > ol > li > :last-child {
+    margin-bottom: 1.2rem;
+  }
+  .lg\:frame-content-xl ol ol,
+  .lg\:frame-content-xl ol ul,
+  .lg\:frame-content-xl ul ol,
+  .lg\:frame-content-xl ul ul {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .lg\:frame-content-xl hr {
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+  .lg\:frame-content-xl hr + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-xl h2 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-xl h3 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-xl h4 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-xl table {
+    font-size: 0.9rem;
+    line-height: 1.5555556;
+  }
+  .lg\:frame-content-xl thead th {
+    padding-right: 0.6666667rem;
+    padding-bottom: 0.8888889rem;
+    padding-left: 0.6666667rem;
+  }
+  .lg\:frame-content-xl thead th:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content-xl thead th:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content-xl tbody td {
+    padding-top: 0.8888889rem;
+    padding-right: 0.6666667rem;
+    padding-bottom: 0.8888889rem;
+    padding-left: 0.6666667rem;
+  }
+  .lg\:frame-content-xl tbody td:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content-xl tbody td:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content-xl > :first-child {
+    margin-top: 0;
+  }
+  .lg\:frame-content-xl > :last-child {
+    margin-bottom: 0;
+  }
+  .lg\:frame-content-2xl {
+    font-size: 1.5rrem;
+    line-height: 1.6666667;
+  }
+  .lg\:frame-content-2xl p {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-2xl [class~="lead"] {
+    font-size: 1.25rem;
+    line-height: 1.4666667;
+    margin-top: 1.0666667rem;
+    margin-bottom: 1.0666667rem;
+  }
+  .lg\:frame-content-2xl blockquote {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+    padding-left: 1.1111111rem;
+  }
+  .lg\:frame-content-2xl h1 {
+    font-size: 2.6666667rem;
+    margin-top: 0;
+    margin-bottom: 0.875rem;
+    line-height: 1;
+  }
+  .lg\:frame-content-2xl h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8333333rem;
+    line-height: 1.0833333;
+  }
+  .lg\:frame-content-2xl h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.2222222;
+  }
+  .lg\:frame-content-2xl h4 {
+    margin-top: 1.6666667rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.5;
+  }
+  .lg\:frame-content-2xl img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content-2xl video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content-2xl figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .lg\:frame-content-2xl figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .lg\:frame-content-2xl figure figcaption {
+    font-size: 0.8333333rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+  .lg\:frame-content-2xl code {
+    font-size: 0.8333333rem;
+  }
+  .lg\:frame-content-2xl h2 code {
+    font-size: 0.875rem;
+  }
+  .lg\:frame-content-2xl h3 code {
+    font-size: 0.8888889rem;
+  }
+  .lg\:frame-content-2xl pre {
+    font-size: 0.8333333rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rrem;
+    padding-top: 1.2rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.6rem;
+  }
+  .lg\:frame-content-2xl ol {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-2xl ul {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-2xl li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .lg\:frame-content-2xl ol > li {
+    padding-left: 1.6666667rem;
+  }
+  .lg\:frame-content-2xl ol > li:before {
+    left: 0;
+  }
+  .lg\:frame-content-2xl ul > li {
+    padding-left: 1.6666667rem;
+  }
+  .lg\:frame-content-2xl ul > li::before {
+    width: 0.3333333rem;
+    height: 0.3333333rem;
+    top: calc(0.8333333em - 0.1666667em);
+    left: 0.25rem;
+  }
+  .lg\:frame-content-2xl > ul > li p {
+    margin-top: 0.8333333rem;
+    margin-bottom: 0.8333333rem;
+  }
+  .lg\:frame-content-2xl > ul > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .lg\:frame-content-2xl > ul > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-2xl > ol > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .lg\:frame-content-2xl > ol > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .lg\:frame-content-2xl ol ol,
+  .lg\:frame-content-2xl ol ul,
+  .lg\:frame-content-2xl ul ol,
+  .lg\:frame-content-2xl ul ul {
+    margin-top: 0.6666667rem;
+    margin-bottom: 0.6666667rem;
+  }
+  .lg\:frame-content-2xl hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .lg\:frame-content-2xl hr + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-2xl h2 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-2xl h3 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-2xl h4 + * {
+    margin-top: 0;
+  }
+  .lg\:frame-content-2xl table {
+    font-size: 0.8333333rem;
+    line-height: 1.4;
+  }
+  .lg\:frame-content-2xl thead th {
+    padding-right: 0.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .lg\:frame-content-2xl thead th:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content-2xl thead th:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content-2xl tbody td {
+    padding-top: 0.8rem;
+    padding-right: 0.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .lg\:frame-content-2xl tbody td:first-child {
+    padding-left: 0;
+  }
+  .lg\:frame-content-2xl tbody td:last-child {
+    padding-right: 0;
+  }
+  .lg\:frame-content-2xl > :first-child {
+    margin-top: 0;
+  }
+  .lg\:frame-content-2xl > :last-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:frame-content {
+    color: #4a5568;
+    max-width: 65ch;
+  }
+  .xl\:frame-content [class~="lead"] {
+    color: #4a5568;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .xl\:frame-content a {
+    color: #1a202c;
+    text-decoration: underline;
+  }
+  .xl\:frame-content strong {
+    color: #1a202c;
+    font-weight: 600;
+  }
+  .xl\:frame-content ol {
+    counter-reset: list-counter;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .xl\:frame-content ol > li {
+    position: relative;
+    counter-increment: list-counter;
+    padding-left: 1.75rem;
+  }
+  .xl\:frame-content ol > li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    font-weight: 400;
+    color: #718096;
+  }
+  .xl\:frame-content ul > li {
+    position: relative;
+    padding-left: 1.75rem;
+  }
+  .xl\:frame-content ul > li::before {
+    content: "";
+    position: absolute;
+    background-color: #cbd5e0;
+    border-radius: 50%;
+    width: 0.375rem;
+    height: 0.375rem;
+    top: calc(0.875em - 0.1875em);
+    left: 0.25rem;
+  }
+  .xl\:frame-content hr {
+    border-color: #e2e8f0;
+    border-top-width: 1px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .xl\:frame-content blockquote {
+    font-weight: 500;
+    font-style: italic;
+    color: #1a202c;
+    border-left-width: 0.25rrem;
+    border-left-color: #e2e8f0;
+    quotes: "\201C""\201D""\2018""\2019";
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1rem;
+  }
+  .xl\:frame-content blockquote p:first-of-type::before {
+    content: open-quote;
+  }
+  .xl\:frame-content blockquote p:last-of-type::after {
+    content: close-quote;
+  }
+  .xl\:frame-content h1 {
+    color: #1a202c;
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-top: 0;
+    margin-bottom: 0.8888889rem;
+    line-height: 1.1111111;
+  }
+  .xl\:frame-content h2 {
+    color: #1a202c;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3333333;
+  }
+  .xl\:frame-content h3 {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  .xl\:frame-content h4 {
+    color: #1a202c;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  .xl\:frame-content figure figcaption {
+    color: #718096;
+    font-size: 0.875rem;
+    line-height: 1.4285714;
+    margin-top: 0.8571429rem;
+  }
+  .xl\:frame-content code {
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  .xl\:frame-content code::before {
+    content: "`";
+  }
+  .xl\:frame-content code::after {
+    content: "`";
+  }
+  .xl\:frame-content pre {
+    color: #e2e8f0;
+    background-color: #2d3748;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+    border-radius: 0.375rrem;
+    padding-top: 0.8571429rem;
+    padding-right: 1.1428571rem;
+    padding-bottom: 0.8571429rem;
+    padding-left: 1.1428571rem;
+  }
+  .xl\:frame-content pre code {
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 0;
+    padding: 0;
+    font-weight: 400;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+  }
+  .xl\:frame-content pre code::before {
+    content: "";
+  }
+  .xl\:frame-content pre code::after {
+    content: "";
+  }
+  .xl\:frame-content table {
+    width: 100%;
+    table-layout: auto;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.7142857;
+  }
+  .xl\:frame-content thead {
+    color: #1a202c;
+    font-weight: 600;
+    border-bottom-width: 1px;
+    border-bottom-color: #cbd5e0;
+  }
+  .xl\:frame-content thead th {
+    vertical-align: bottom;
+    padding-right: 0.5714286rem;
+    padding-bottom: 0.5714286rem;
+    padding-left: 0.5714286rem;
+  }
+  .xl\:frame-content tbody tr {
+    border-bottom-width: 1px;
+    border-bottom-color: #e2e8f0;
+  }
+  .xl\:frame-content tbody tr:last-child {
+    border-bottom-width: 0;
+  }
+  .xl\:frame-content tbody td {
+    vertical-align: top;
+    padding-top: 0.5714286rem;
+    padding-right: 0.5714286rem;
+    padding-bottom: 0.5714286rem;
+    padding-left: 0.5714286rem;
+  }
+  .xl\:frame-content {
+    font-size: 1rrem;
+    line-height: 1.75;
+  }
+  .xl\:frame-content p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .xl\:frame-content img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .xl\:frame-content h2 code {
+    font-size: 0.875rem;
+  }
+  .xl\:frame-content h3 code {
+    font-size: 0.9rem;
+  }
+  .xl\:frame-content ul {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .xl\:frame-content li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .xl\:frame-content ol > li:before {
+    left: 0;
+  }
+  .xl\:frame-content > ul > li p {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .xl\:frame-content > ul > li > :first-child {
+    margin-top: 1.25rem;
+  }
+  .xl\:frame-content > ul > li > :last-child {
+    margin-bottom: 1.25rem;
+  }
+  .xl\:frame-content > ol > li > :first-child {
+    margin-top: 1.25rem;
+  }
+  .xl\:frame-content > ol > li > :last-child {
+    margin-bottom: 1.25rem;
+  }
+  .xl\:frame-content ol ol,
+  .xl\:frame-content ol ul,
+  .xl\:frame-content ul ol,
+  .xl\:frame-content ul ul {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .xl\:frame-content hr + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content h2 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content h3 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content h4 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content thead th:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content thead th:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content tbody td:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content tbody td:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content > :first-child {
+    margin-top: 0;
+  }
+  .xl\:frame-content > :last-child {
+    margin-bottom: 0;
+  }
+  .xl\:frame-content-sm {
+    font-size: 0.875rrem;
+    line-height: 1.7142857;
+  }
+  .xl\:frame-content-sm p {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .xl\:frame-content-sm [class~="lead"] {
+    font-size: 1.2857143rem;
+    line-height: 1.5555556;
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .xl\:frame-content-sm blockquote {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+    padding-left: 1.1111111rem;
+  }
+  .xl\:frame-content-sm h1 {
+    font-size: 2.1428571rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    line-height: 1.2;
+  }
+  .xl\:frame-content-sm h2 {
+    font-size: 1.4285714rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+  }
+  .xl\:frame-content-sm h3 {
+    font-size: 1.2857143rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.4444444rem;
+    line-height: 1.5555556;
+  }
+  .xl\:frame-content-sm h4 {
+    margin-top: 1.4285714rem;
+    margin-bottom: 0.5714286rem;
+    line-height: 1.4285714;
+  }
+  .xl\:frame-content-sm img {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .xl\:frame-content-sm video {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .xl\:frame-content-sm figure {
+    margin-top: 1.7142857rem;
+    margin-bottom: 1.7142857rem;
+  }
+  .xl\:frame-content-sm figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .xl\:frame-content-sm figure figcaption {
+    font-size: 0.8571429rem;
+    line-height: 1.3333333;
+    margin-top: 0.6666667rem;
+  }
+  .xl\:frame-content-sm code {
+    font-size: 0.8571429rem;
+  }
+  .xl\:frame-content-sm h2 code {
+    font-size: 0.9rem;
+  }
+  .xl\:frame-content-sm h3 code {
+    font-size: 0.8888889rem;
+  }
+  .xl\:frame-content-sm pre {
+    font-size: 0.8571429rem;
+    line-height: 1.6666667;
+    margin-top: 1.6666667rem;
+    margin-bottom: 1.6666667rem;
+    border-radius: 0.25rrem;
+    padding-top: 0.6666667rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .xl\:frame-content-sm ol {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .xl\:frame-content-sm ul {
+    margin-top: 1.1428571rem;
+    margin-bottom: 1.1428571rem;
+  }
+  .xl\:frame-content-sm li {
+    margin-top: 0.2857143rem;
+    margin-bottom: 0.2857143rem;
+  }
+  .xl\:frame-content-sm ol > li {
+    padding-left: 1.5714286rem;
+  }
+  .xl\:frame-content-sm ol > li:before {
+    left: 0;
+  }
+  .xl\:frame-content-sm ul > li {
+    padding-left: 1.5714286rem;
+  }
+  .xl\:frame-content-sm ul > li::before {
+    height: 0.3571429rem;
+    width: 0.3571429rem;
+    top: calc(0.8571429em - 0.1785714em);
+    left: 0.2142857rem;
+  }
+  .xl\:frame-content-sm > ul > li p {
+    margin-top: 0.5714286rem;
+    margin-bottom: 0.5714286rem;
+  }
+  .xl\:frame-content-sm > ul > li > :first-child {
+    margin-top: 1.1428571rem;
+  }
+  .xl\:frame-content-sm > ul > li > :last-child {
+    margin-bottom: 1.1428571rem;
+  }
+  .xl\:frame-content-sm > ol > li > :first-child {
+    margin-top: 1.1428571rem;
+  }
+  .xl\:frame-content-sm > ol > li > :last-child {
+    margin-bottom: 1.1428571rem;
+  }
+  .xl\:frame-content-sm ol ol,
+  .xl\:frame-content-sm ol ul,
+  .xl\:frame-content-sm ul ol,
+  .xl\:frame-content-sm ul ul {
+    margin-top: 0.5714286rem;
+    margin-bottom: 0.5714286rem;
+  }
+  .xl\:frame-content-sm hr {
+    margin-top: 2.8571429rem;
+    margin-bottom: 2.8571429rem;
+  }
+  .xl\:frame-content-sm hr + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-sm h2 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-sm h3 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-sm h4 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-sm table {
+    font-size: 0.8571429rem;
+    line-height: 1.5;
+  }
+  .xl\:frame-content-sm thead th {
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .xl\:frame-content-sm thead th:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content-sm thead th:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content-sm tbody td {
+    padding-top: 0.6666667rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6666667rem;
+    padding-left: 1rem;
+  }
+  .xl\:frame-content-sm tbody td:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content-sm tbody td:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content-sm > :first-child {
+    margin-top: 0;
+  }
+  .xl\:frame-content-sm > :last-child {
+    margin-bottom: 0;
+  }
+  .xl\:frame-content-lg {
+    font-size: 1.125rrem;
+    line-height: 1.7777778;
+  }
+  .xl\:frame-content-lg p {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-lg [class~="lead"] {
+    font-size: 1.2222222rem;
+    line-height: 1.4545455;
+    margin-top: 1.0909091rem;
+    margin-bottom: 1.0909091rem;
+  }
+  .xl\:frame-content-lg blockquote {
+    margin-top: 1.6666667rem;
+    margin-bottom: 1.6666667rem;
+    padding-left: 1rem;
+  }
+  .xl\:frame-content-lg h1 {
+    font-size: 2.6666667rem;
+    margin-top: 0;
+    margin-bottom: 0.8333333rem;
+    line-height: 1;
+  }
+  .xl\:frame-content-lg h2 {
+    font-size: 1.6666667rem;
+    margin-top: 1.8666667rem;
+    margin-bottom: 1.0666667rem;
+    line-height: 1.3333333;
+  }
+  .xl\:frame-content-lg h3 {
+    font-size: 1.3333333rem;
+    margin-top: 1.6666667rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.5;
+  }
+  .xl\:frame-content-lg h4 {
+    margin-top: 1.7777778rem;
+    margin-bottom: 0.4444444rem;
+    line-height: 1.5555556;
+  }
+  .xl\:frame-content-lg img {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .xl\:frame-content-lg video {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .xl\:frame-content-lg figure {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+  }
+  .xl\:frame-content-lg figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .xl\:frame-content-lg figure figcaption {
+    font-size: 0.8888889rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+  .xl\:frame-content-lg code {
+    font-size: 0.8888889rem;
+  }
+  .xl\:frame-content-lg h2 code {
+    font-size: 0.8666667rem;
+  }
+  .xl\:frame-content-lg h3 code {
+    font-size: 0.875rem;
+  }
+  .xl\:frame-content-lg pre {
+    font-size: 0.8888889rem;
+    line-height: 1.75;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.375rrem;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  .xl\:frame-content-lg ol {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-lg ul {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-lg li {
+    margin-top: 0.6666667rem;
+    margin-bottom: 0.6666667rem;
+  }
+  .xl\:frame-content-lg ol > li {
+    padding-left: 1.6666667rem;
+  }
+  .xl\:frame-content-lg ol > li:before {
+    left: 0;
+  }
+  .xl\:frame-content-lg ul > li {
+    padding-left: 1.6666667rem;
+  }
+  .xl\:frame-content-lg ul > li::before {
+    width: 0.3333333rem;
+    height: 0.3333333rem;
+    top: calc(0.8888889em - 0.1666667em);
+    left: 0.2222222rem;
+  }
+  .xl\:frame-content-lg > ul > li p {
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .xl\:frame-content-lg > ul > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .xl\:frame-content-lg > ul > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-lg > ol > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .xl\:frame-content-lg > ol > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-lg ol ol,
+  .xl\:frame-content-lg ol ul,
+  .xl\:frame-content-lg ul ol,
+  .xl\:frame-content-lg ul ul {
+    margin-top: 0.8888889rem;
+    margin-bottom: 0.8888889rem;
+  }
+  .xl\:frame-content-lg hr {
+    margin-top: 3.1111111rem;
+    margin-bottom: 3.1111111rem;
+  }
+  .xl\:frame-content-lg hr + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-lg h2 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-lg h3 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-lg h4 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-lg table {
+    font-size: 0.8888889rem;
+    line-height: 1.5;
+  }
+  .xl\:frame-content-lg thead th {
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .xl\:frame-content-lg thead th:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content-lg thead th:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content-lg tbody td {
+    padding-top: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .xl\:frame-content-lg tbody td:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content-lg tbody td:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content-lg > :first-child {
+    margin-top: 0;
+  }
+  .xl\:frame-content-lg > :last-child {
+    margin-bottom: 0;
+  }
+  .xl\:frame-content-xl {
+    font-size: 1.25rrem;
+    line-height: 1.8;
+  }
+  .xl\:frame-content-xl p {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .xl\:frame-content-xl [class~="lead"] {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .xl\:frame-content-xl blockquote {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    padding-left: 1.0666667rem;
+  }
+  .xl\:frame-content-xl h1 {
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0.8571429rem;
+    line-height: 1;
+  }
+  .xl\:frame-content-xl h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.8888889rem;
+    line-height: 1.1111111;
+  }
+  .xl\:frame-content-xl h3 {
+    font-size: 1.5rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.3333333;
+  }
+  .xl\:frame-content-xl h4 {
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  .xl\:frame-content-xl img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content-xl video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content-xl figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content-xl figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .xl\:frame-content-xl figure figcaption {
+    font-size: 0.9rem;
+    line-height: 1.5555556;
+    margin-top: 1rem;
+  }
+  .xl\:frame-content-xl code {
+    font-size: 0.9rem;
+  }
+  .xl\:frame-content-xl h2 code {
+    font-size: 0.8611111rem;
+  }
+  .xl\:frame-content-xl h3 code {
+    font-size: 0.9rem;
+  }
+  .xl\:frame-content-xl pre {
+    font-size: 0.9rem;
+    line-height: 1.7777778;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rrem;
+    padding-top: 1.1111111rem;
+    padding-right: 1.3333333rem;
+    padding-bottom: 1.1111111rem;
+    padding-left: 1.3333333rem;
+  }
+  .xl\:frame-content-xl ol {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .xl\:frame-content-xl ul {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .xl\:frame-content-xl li {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  .xl\:frame-content-xl ol > li {
+    padding-left: 1.8rem;
+  }
+  .xl\:frame-content-xl ol > li:before {
+    left: 0;
+  }
+  .xl\:frame-content-xl ul > li {
+    padding-left: 1.8rem;
+  }
+  .xl\:frame-content-xl ul > li::before {
+    width: 0.35rem;
+    height: 0.35rem;
+    top: calc(0.9em - 0.175em);
+    left: 0.25rem;
+  }
+  .xl\:frame-content-xl > ul > li p {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .xl\:frame-content-xl > ul > li > :first-child {
+    margin-top: 1.2rem;
+  }
+  .xl\:frame-content-xl > ul > li > :last-child {
+    margin-bottom: 1.2rem;
+  }
+  .xl\:frame-content-xl > ol > li > :first-child {
+    margin-top: 1.2rem;
+  }
+  .xl\:frame-content-xl > ol > li > :last-child {
+    margin-bottom: 1.2rem;
+  }
+  .xl\:frame-content-xl ol ol,
+  .xl\:frame-content-xl ol ul,
+  .xl\:frame-content-xl ul ol,
+  .xl\:frame-content-xl ul ul {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .xl\:frame-content-xl hr {
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+  }
+  .xl\:frame-content-xl hr + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-xl h2 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-xl h3 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-xl h4 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-xl table {
+    font-size: 0.9rem;
+    line-height: 1.5555556;
+  }
+  .xl\:frame-content-xl thead th {
+    padding-right: 0.6666667rem;
+    padding-bottom: 0.8888889rem;
+    padding-left: 0.6666667rem;
+  }
+  .xl\:frame-content-xl thead th:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content-xl thead th:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content-xl tbody td {
+    padding-top: 0.8888889rem;
+    padding-right: 0.6666667rem;
+    padding-bottom: 0.8888889rem;
+    padding-left: 0.6666667rem;
+  }
+  .xl\:frame-content-xl tbody td:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content-xl tbody td:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content-xl > :first-child {
+    margin-top: 0;
+  }
+  .xl\:frame-content-xl > :last-child {
+    margin-bottom: 0;
+  }
+  .xl\:frame-content-2xl {
+    font-size: 1.5rrem;
+    line-height: 1.6666667;
+  }
+  .xl\:frame-content-2xl p {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-2xl [class~="lead"] {
+    font-size: 1.25rem;
+    line-height: 1.4666667;
+    margin-top: 1.0666667rem;
+    margin-bottom: 1.0666667rem;
+  }
+  .xl\:frame-content-2xl blockquote {
+    margin-top: 1.7777778rem;
+    margin-bottom: 1.7777778rem;
+    padding-left: 1.1111111rem;
+  }
+  .xl\:frame-content-2xl h1 {
+    font-size: 2.6666667rem;
+    margin-top: 0;
+    margin-bottom: 0.875rem;
+    line-height: 1;
+  }
+  .xl\:frame-content-2xl h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8333333rem;
+    line-height: 1.0833333;
+  }
+  .xl\:frame-content-2xl h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5555556rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.2222222;
+  }
+  .xl\:frame-content-2xl h4 {
+    margin-top: 1.6666667rem;
+    margin-bottom: 0.6666667rem;
+    line-height: 1.5;
+  }
+  .xl\:frame-content-2xl img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content-2xl video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content-2xl figure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .xl\:frame-content-2xl figure > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .xl\:frame-content-2xl figure figcaption {
+    font-size: 0.8333333rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+  .xl\:frame-content-2xl code {
+    font-size: 0.8333333rem;
+  }
+  .xl\:frame-content-2xl h2 code {
+    font-size: 0.875rem;
+  }
+  .xl\:frame-content-2xl h3 code {
+    font-size: 0.8888889rem;
+  }
+  .xl\:frame-content-2xl pre {
+    font-size: 0.8333333rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rrem;
+    padding-top: 1.2rem;
+    padding-right: 1.6rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.6rem;
+  }
+  .xl\:frame-content-2xl ol {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-2xl ul {
+    margin-top: 1.3333333rem;
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-2xl li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .xl\:frame-content-2xl ol > li {
+    padding-left: 1.6666667rem;
+  }
+  .xl\:frame-content-2xl ol > li:before {
+    left: 0;
+  }
+  .xl\:frame-content-2xl ul > li {
+    padding-left: 1.6666667rem;
+  }
+  .xl\:frame-content-2xl ul > li::before {
+    width: 0.3333333rem;
+    height: 0.3333333rem;
+    top: calc(0.8333333em - 0.1666667em);
+    left: 0.25rem;
+  }
+  .xl\:frame-content-2xl > ul > li p {
+    margin-top: 0.8333333rem;
+    margin-bottom: 0.8333333rem;
+  }
+  .xl\:frame-content-2xl > ul > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .xl\:frame-content-2xl > ul > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-2xl > ol > li > :first-child {
+    margin-top: 1.3333333rem;
+  }
+  .xl\:frame-content-2xl > ol > li > :last-child {
+    margin-bottom: 1.3333333rem;
+  }
+  .xl\:frame-content-2xl ol ol,
+  .xl\:frame-content-2xl ol ul,
+  .xl\:frame-content-2xl ul ol,
+  .xl\:frame-content-2xl ul ul {
+    margin-top: 0.6666667rem;
+    margin-bottom: 0.6666667rem;
+  }
+  .xl\:frame-content-2xl hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .xl\:frame-content-2xl hr + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-2xl h2 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-2xl h3 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-2xl h4 + * {
+    margin-top: 0;
+  }
+  .xl\:frame-content-2xl table {
+    font-size: 0.8333333rem;
+    line-height: 1.4;
+  }
+  .xl\:frame-content-2xl thead th {
+    padding-right: 0.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .xl\:frame-content-2xl thead th:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content-2xl thead th:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content-2xl tbody td {
+    padding-top: 0.8rem;
+    padding-right: 0.6rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.6rem;
+  }
+  .xl\:frame-content-2xl tbody td:first-child {
+    padding-left: 0;
+  }
+  .xl\:frame-content-2xl tbody td:last-child {
+    padding-right: 0;
+  }
+  .xl\:frame-content-2xl > :first-child {
+    margin-top: 0;
+  }
+  .xl\:frame-content-2xl > :last-child {
+    margin-bottom: 0;
+  }
+}

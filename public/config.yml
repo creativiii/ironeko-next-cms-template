@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo:
+  branch: master
+  base_url: 'https://mysite.com'
+  auth_endpoint: 'api/auth'
+  preview_context: vercel/deployment
+media_folder: 'public/images'
+public_folder: '/images'
+collections:
+  - name: 'categories'
+    label: 'Categories'
+    folder: '_posts/categories'
+    create: true
+    slug: '{{name}}'
+    extension: mdx
+    format: yaml-frontmatter
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Visible', name: 'visible', widget: 'boolean' }
+  - name: 'pages'
+    label: 'Pages'
+    folder: '_posts/pages'
+    create: true
+    slug: '{{title}}'
+    extension: mdx
+    format: yaml-frontmatter
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
